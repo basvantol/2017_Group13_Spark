@@ -1,25 +1,6 @@
-Healthcare centres:
-- Mapping specialisation per hospitals (and general facilities)
-- Map healthcare centres locations
-- Combining data to show geographical distribution per specilisation/facilities etc.
-
-Helping to make decisions about building healthcare centres or allocating resources, fundings, etc.
-
-
-2a. EV charging stations:
-- Map and show where EV charging stations are
-- Determine suggested locations for new EV charging station
-
-2b. Combine with parking info:
+For citizens:
 - Map and show parking spots/garages
-- Determine suggested locations for new parking facilities
-- Determine redundant parking locations
-
-
-
-
-
-3. For citizens:
+- Map and show EV charging station locations
 - Live data? 
 - User may select type of vehicle: EV/non-EV
 - Find nearest suitable parking spot

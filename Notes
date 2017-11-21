@@ -25,4 +25,6 @@ Helping to make decisions about building healthcare centres or allocating resour
 - Find nearest suitable parking spot
 - Use traffic data! Live data or averages per section per hour/minute.
 - App will find FASTEST way to suitable spot.
-(+ show different options classified by characteristics?)
+- Show different options classified by characteristics
+- Choose target location
+- Include public transport nodes near parking locations for possible preference

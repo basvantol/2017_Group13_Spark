@@ -15,8 +15,14 @@ Helping to make decisions about building healthcare centres or allocating resour
 - Determine suggested locations for new parking facilities
 - Determine redundant parking locations
 
-2c. For citizens:
+
+
+
+
+3. For citizens:
 - Live data? 
 - User may select type of vehicle: EV/non-EV
 - Find nearest suitable parking spot
-- Inputs may be used for data analysis to improve a and b
+- Use traffic data! Live data or averages per section per hour/minute.
+- App will find FASTEST way to suitable spot.
+(+ show different options classified by characteristics?)

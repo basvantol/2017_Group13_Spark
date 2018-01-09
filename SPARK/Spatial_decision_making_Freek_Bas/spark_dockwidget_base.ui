@@ -24,7 +24,7 @@
        <attribute name="title">
         <string>Account</string>
        </attribute>
-       <widget class="QLabel" name="label_3">
+       <widget class="QLabel" name="AccountLabel">
         <property name="geometry">
          <rect>
           <x>0</x>
@@ -81,7 +81,7 @@
            <item row="3" column="0">
             <layout class="QGridLayout" name="gridLayout_13">
              <item row="0" column="0">
-              <widget class="QRadioButton" name="radioButton_22">
+              <widget class="QRadioButton" name="YesHome">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -102,7 +102,7 @@
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QRadioButton" name="radioButton_23">
+              <widget class="QRadioButton" name="NoHome">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -123,7 +123,7 @@
               </widget>
              </item>
              <item row="0" column="2">
-              <widget class="QRadioButton" name="radioButton_24">
+              <widget class="QRadioButton" name="SharedHome">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -166,7 +166,7 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QLineEdit" name="lineEdit_2">
+            <widget class="QLineEdit" name="HomeAddressInput">
              <property name="font">
               <font>
                <pointsize>11</pointsize>
@@ -192,7 +192,7 @@
           </layout>
          </item>
          <item row="1" column="0">
-          <widget class="QLineEdit" name="lineEdit">
+          <widget class="QLineEdit" name="NameInput">
            <property name="font">
             <font>
              <pointsize>11</pointsize>
@@ -223,7 +223,7 @@
             </widget>
            </item>
            <item row="1" column="0">
-            <widget class="QLineEdit" name="lineEdit_3">
+            <widget class="QLineEdit" name="WorkAddressInput">
              <property name="font">
               <font>
                <pointsize>11</pointsize>
@@ -234,7 +234,7 @@
            <item row="3" column="0">
             <layout class="QGridLayout" name="gridLayout_14">
              <item row="0" column="2">
-              <widget class="QRadioButton" name="radioButton_27">
+              <widget class="QRadioButton" name="SharedWork">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -252,7 +252,7 @@
               </widget>
              </item>
              <item row="0" column="1">
-              <widget class="QRadioButton" name="radioButton_26">
+              <widget class="QRadioButton" name="NoWork">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -270,7 +270,7 @@
               </widget>
              </item>
              <item row="0" column="0">
-              <widget class="QRadioButton" name="radioButton_25">
+              <widget class="QRadioButton" name="YesWork">
                <property name="font">
                 <font>
                  <pointsize>9</pointsize>
@@ -288,7 +288,7 @@
               </widget>
              </item>
              <item row="1" column="1">
-              <widget class="QPushButton" name="pushButton_2">
+              <widget class="QPushButton" name="ConfirmButtonAccount">
                <property name="text">
                 <string>Confirm</string>
                </property>
@@ -373,11 +373,11 @@
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QLineEdit" name="lineEdit_4"/>
+          <widget class="QLineEdit" name="DestinationInput"/>
          </item>
         </layout>
        </widget>
-       <widget class="QPushButton" name="pushButton">
+       <widget class="QPushButton" name="ConfirmButtonDestination">
         <property name="geometry">
          <rect>
           <x>140</x>
@@ -493,7 +493,7 @@
          </item>
         </layout>
        </widget>
-       <widget class="QSlider" name="horizontalSlider">
+       <widget class="QSlider" name="RatingSlider">
         <property name="geometry">
          <rect>
           <x>38</x>
@@ -564,28 +564,28 @@
         </property>
         <layout class="QGridLayout" name="gridLayout_15">
          <item row="0" column="1">
-          <widget class="QCheckBox" name="checkBox_2">
+          <widget class="QCheckBox" name="checkBoxQuantity">
            <property name="text">
             <string>Quantity</string>
            </property>
           </widget>
          </item>
          <item row="0" column="0">
-          <widget class="QCheckBox" name="checkBox">
+          <widget class="QCheckBox" name="checkBoxAccessability">
            <property name="text">
             <string>Accessability</string>
            </property>
           </widget>
          </item>
          <item row="1" column="0">
-          <widget class="QCheckBox" name="checkBox_3">
+          <widget class="QCheckBox" name="checkBoxLocation">
            <property name="text">
             <string>Location</string>
            </property>
           </widget>
          </item>
          <item row="1" column="1">
-          <widget class="QCheckBox" name="checkBox_4">
+          <widget class="QCheckBox" name="checkBoxCondition">
            <property name="text">
             <string>Condition</string>
            </property>
@@ -593,7 +593,7 @@
          </item>
         </layout>
        </widget>
-       <widget class="QPushButton" name="pushButton_3">
+       <widget class="QPushButton" name="ConfirmButtonRating">
         <property name="geometry">
          <rect>
           <x>140</x>
@@ -610,7 +610,7 @@
      </widget>
     </item>
     <item row="0" column="0">
-     <widget class="QGraphicsView" name="graphicsView"/>
+     <widget class="QGraphicsView" name="Map"/>
     </item>
    </layout>
   </widget>

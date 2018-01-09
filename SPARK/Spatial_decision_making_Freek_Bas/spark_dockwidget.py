@@ -7,7 +7,7 @@
                              -------------------
         begin                : 2017-12-05
         git sha              : $Format:%H$
-        copyright            : (C) 2017 by Bas van Tolhoi dit is een test
+        copyright            : (C) 2017 by Bas van Tol
         email                : bvantol3@gmail.com
  ***************************************************************************/
 

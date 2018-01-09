@@ -1,11 +1,12 @@
-For citizens:
-- Map and show parking spots/garages
-- Map and show EV charging station locations
-- Live data? 
-- User may select type of vehicle: EV/non-EV
-- Find nearest suitable parking spot
-- Use traffic data! Live data or averages per section per hour/minute.
-- App will find FASTEST way to suitable spot.
-- Show different options classified by characteristics
-- Choose target location
-- Include public transport nodes near parking locations for possible preference
+TO DO WENSDEE:
+
+Freek
+- DATA MODEL
+- DATA SAMPLES VERZAMELEN
+- USER CASE FINISHED
+- FLOW DIAGRAM AANPASSEN
+
+Bas
+- MOCKUP & SKETCHES FINISHED
+- PLUGIN ENIGSZINS WERKEND KRIJGEN (DATA KOPPELEN MET QGIS)
+- Later: Routing

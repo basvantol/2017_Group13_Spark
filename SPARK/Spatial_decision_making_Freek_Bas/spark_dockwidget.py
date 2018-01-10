@@ -43,12 +43,21 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+        self.TabDestination.setEnabled(False)
+        self.TabRating.setEnabled(False)
+
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
         self.openScenario()
         #self.initCheckBoxes()
         #self.initComboBox()
         #self.initslider()
+
+        #input
+        self.ConfirmButtonAccount.clicked.connect(self.ConfirmAccount)
+        self.ConfirmButtonDestination.clicked.connect(self.ConfirmDestination)
+        self.ConfirmButtonRating.clicked.connect(self.ConfirmRating)
+
 
 
     def closeEvent(self, event):
@@ -61,3 +70,19 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
     def openScenario(self):
         scenario_file =  os.path.join(self.plugin_dir,'sample_data','start_project.qgs')
         self.iface.addProject(unicode(scenario_file))
+
+    def ConfirmAccount(self):
+        self.TabAccount.setEnabled(False)
+        self.TabDestination.setEnabled(True)
+        self.TabRating.setEnabled(False)
+
+    def ConfirmDestination(self):
+        self.TabAccount.setEnabled(False)
+        self.TabDestination.setEnabled(False)
+        self.TabRating.setEnabled(True)
+
+    def ConfirmRating(self):
+        self.TabAccount.setEnabled(False)
+        self.TabDestination.setEnabled(True)
+        self.TabRating.setEnabled(False)
+

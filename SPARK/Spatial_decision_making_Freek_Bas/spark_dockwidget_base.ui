@@ -31,9 +31,9 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
-      <widget class="QWidget" name="tab">
+      <widget class="QWidget" name="TabAccount">
        <attribute name="title">
         <string>Account</string>
        </attribute>
@@ -413,7 +413,7 @@
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_2">
+      <widget class="QWidget" name="TabDestination">
        <attribute name="title">
         <string>Destination</string>
        </attribute>
@@ -513,7 +513,7 @@
         </property>
        </widget>
       </widget>
-      <widget class="QWidget" name="tab_3">
+      <widget class="QWidget" name="TabRating">
        <attribute name="title">
         <string>Rating</string>
        </attribute>

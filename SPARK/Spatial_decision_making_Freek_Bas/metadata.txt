@@ -30,7 +30,7 @@ tags=
 
 homepage=
 category=Plugins
-icon=icon.png
+icon=icons/logo.png
 # experimental flag
 experimental=False
 

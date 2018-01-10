@@ -34,7 +34,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
 
     closingPlugin = pyqtSignal()
 
-    def __init__(self, parent=None):
+    def __init__(self, iface, parent=None):
         """Constructor."""
         super(Spatial_decision_making_Freek_BasDockWidget, self).__init__(parent)
         # Set up the user interface from Designer.
@@ -43,8 +43,20 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+        self.iface=iface
+        self.plugin_dir = os.path.dirname(__file__)
+        self.openScenario()
+        #self.initCheckBoxes()
+        #self.initComboBox()
+        #self.initslider()
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
 
+#######
+#   Data functions
+#######
+    def openScenario(self):
+        scenario_file =  os.path.join(self.plugin_dir,'sample_data','start_project.qgs')
+        self.iface.addProject(unicode(scenario_file))

@@ -165,7 +165,7 @@ class Spatial_decision_making_Freek_Bas:
 
 
     def initGui(self):
-        icon_path = ':/plugins/Spatial_decision_making_Freek_Bas/icons/logo.png'
+        icon_path = ':/plugins/Spatial_decision_making_Freek_Bas/icon.png'
         self.add_action(
             icon_path,
             text=self.tr(u'SPARK'),

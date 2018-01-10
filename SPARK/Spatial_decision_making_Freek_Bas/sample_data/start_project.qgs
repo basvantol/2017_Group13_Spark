@@ -11,7 +11,7 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="NWB_2016_Rotterdam_roads_WO20180110142757617" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/NWB_2016_Rotterdam_roads_WO.shp" name="NWB_2016_Rotterdam_roads_WO">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="OSM_Standard20180110150957135" source="" name="OSM Standard">
+    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="OpenLayers_plugin_layer20180110184125547" source="" name="Google Streets">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -19,37 +19,42 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>83658.28989194930181839</xmin>
-      <ymin>433583.48860500886803493</ymin>
-      <xmax>98208.10602944940910675</xmax>
-      <ymax>441287.60110500868177041</ymax>
+      <xmin>494237.86541844095336273</xmin>
+      <ymin>6782629.73107654321938753</ymin>
+      <xmax>505928.43213292147265747</xmax>
+      <ymax>6789076.9721935736015439</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
-        <srsid>2517</srsid>
-        <srid>28992</srid>
-        <authid>EPSG:28992</authid>
-        <description>Amersfoort / RD New</description>
-        <projectionacronym>sterea</projectionacronym>
-        <ellipsoidacronym>bessel</ellipsoidacronym>
+        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
+        <srsid>3857</srsid>
+        <srid>3857</srid>
+        <authid>EPSG:3857</authid>
+        <description>WGS 84 / Pseudo Mercator</description>
+        <projectionacronym>merc</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="2016_Rotterdam_parking20180110142813545"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OSM_Standard20180110150957135"/>
-      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="NWB_2016_Rotterdam_roads_WO20180110142757617"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="2016_Rotterdam_parking20180110142813545"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stamen_Toner_OSM20180110183923750"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stamen_Watercolor_OSM20180110183936672"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180110183907314"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180110184053376"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180110184125547"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="NWB_2016_Rotterdam_roads_WO20180110142757617"/>
+      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stamen_Terrain_USA_OSM20180110184033500"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
       <item>NWB_2016_Rotterdam_roads_WO20180110142757617</item>
       <item>2016_Rotterdam_parking20180110142813545</item>
-      <item>OSM_Standard20180110150957135</item>
+      <item>OpenLayers_plugin_layer20180110184125547</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -63,9 +68,9 @@
         <legendlayerfile isInOverview="0" layerid="NWB_2016_Rotterdam_roads_WO20180110142757617" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="OSM Standard" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Streets" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="OSM_Standard20180110150957135" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20180110184125547" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
@@ -544,20 +549,19 @@
       </defaults>
       <previewExpression></previewExpression>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="PyTiledLayer">
+    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
       <extent>
-        <xmin>-20037508.34278924390673637</xmin>
-        <ymin>-20037508.34278924390673637</ymin>
-        <xmax>20037508.34278924390673637</xmax>
-        <ymax>20037508.34278924390673637</ymax>
+        <xmin>-20037508.33999999985098839</xmin>
+        <ymin>-20037508.33999999985098839</ymin>
+        <xmax>20037508.33999999985098839</xmax>
+        <ymax>20037508.33999999985098839</ymax>
       </extent>
-      <id>OSM_Standard20180110150957135</id>
+      <id>OpenLayers_plugin_layer20180110184125547</id>
       <datasource></datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <attribution href="https://www.openstreetmap.org/copyright">© OpenStreetMap contributors, CC-BY-SA</attribution>
-      <layername>OSM Standard</layername>
+      <layername>Google Streets</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
@@ -571,19 +575,7 @@
         </spatialrefsys>
       </srs>
       <customproperties>
-        <property key="blendMode" value="SourceOver"/>
-        <property key="brigthness" value="0"/>
-        <property key="contrast" value="1"/>
-        <property key="credit" value="© OpenStreetMap contributors, CC-BY-SA"/>
-        <property key="creditVisibility" value="0"/>
-        <property key="grayscaleRender" value="0"/>
-        <property key="serviceUrl" value="http://tile.openstreetmap.org/{z}/{x}/{y}.png"/>
-        <property key="smoothRender" value="1"/>
-        <property key="title" value="OSM Standard"/>
-        <property key="transparency" value="0"/>
-        <property key="yOriginTop" value="1"/>
-        <property key="zmax" value="19"/>
-        <property key="zmin" value="0"/>
+        <property key="ol_layer_type" value="Google Streets"/>
       </customproperties>
     </maplayer>
   </projectlayers>
@@ -612,9 +604,30 @@
     </Gui>
     <Digitizing>
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
+      <LayerSnappingList type="QStringList">
+        <value>2016_Rotterdam_parking20180110142813545</value>
+        <value>NWB_2016_Rotterdam_roads_WO20180110142757617</value>
+      </LayerSnappingList>
+      <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
+        <value>disabled</value>
+      </LayerSnappingEnabledList>
       <SnappingMode type="QString">current_layer</SnappingMode>
+      <AvoidIntersectionsList type="QStringList"/>
+      <LayerSnappingToleranceUnitList type="QStringList">
+        <value>2</value>
+        <value>2</value>
+      </LayerSnappingToleranceUnitList>
+      <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
+        <value>to_vertex_and_segment</value>
+      </LayerSnapToList>
       <DefaultSnapType type="QString">off</DefaultSnapType>
       <DefaultSnapTolerance type="double">0</DefaultSnapTolerance>
+      <LayerSnappingToleranceList type="QStringList">
+        <value>0.000000</value>
+        <value>0.000000</value>
+      </LayerSnappingToleranceList>
     </Digitizing>
     <PositionPrecision>
       <DecimalPlaces type="int">2</DecimalPlaces>

@@ -50,6 +50,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         #self.initComboBox()
         #self.initslider()
 
+
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()

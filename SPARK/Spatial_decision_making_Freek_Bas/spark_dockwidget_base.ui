@@ -841,12 +841,17 @@
         <height>394</height>
        </size>
       </property>
+      <property name="styleSheet">
+       <string notr="true">background-image: url(:/SPARK/Spark.png);</string>
+      </property>
      </widget>
     </item>
    </layout>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
  <buttongroups>
   <buttongroup name="buttonGroup"/>

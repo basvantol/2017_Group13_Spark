@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>450</width>
+    <width>446</width>
     <height>717</height>
    </rect>
   </property>
@@ -15,7 +15,7 @@
   </property>
   <widget class="QWidget" name="dockWidgetContents">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0">
+    <item row="0" column="1">
      <widget class="QLabel" name="logoLabel">
       <property name="minimumSize">
        <size>
@@ -28,7 +28,7 @@
       </property>
      </widget>
     </item>
-    <item row="1" column="0">
+    <item row="1" column="1">
      <widget class="QTabWidget" name="tabWidget">
       <property name="minimumSize">
        <size>
@@ -83,249 +83,19 @@
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QWidget" name="gridLayoutWidget_3">
+       <widget class="QWidget" name="formLayoutWidget">
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>30</y>
-          <width>361</width>
-          <height>330</height>
+          <y>40</y>
+          <width>370</width>
+          <height>261</height>
          </rect>
         </property>
-        <property name="minimumSize">
-         <size>
-          <width>361</width>
-          <height>330</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>361</width>
-          <height>330</height>
-         </size>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_9">
-         <item row="2" column="0">
-          <layout class="QGridLayout" name="gridLayout_8">
-           <item row="1" column="0">
-            <widget class="QLineEdit" name="WorkAddressInput">
-             <property name="minimumSize">
-              <size>
-               <width>357</width>
-               <height>28</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>357</width>
-               <height>28</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>11</pointsize>
-              </font>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
-            <layout class="QGridLayout" name="gridLayout_14">
-             <item row="0" column="2">
-              <widget class="QRadioButton" name="SharedWork">
-               <property name="minimumSize">
-                <size>
-                 <width>114</width>
-                 <height>22</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>114</width>
-                 <height>22</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>9</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Shared</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>12</width>
-                 <height>12</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QRadioButton" name="YesWork">
-               <property name="minimumSize">
-                <size>
-                 <width>114</width>
-                 <height>22</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>114</width>
-                 <height>22</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>9</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>Yes</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>12</width>
-                 <height>12</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="1">
-              <widget class="QRadioButton" name="NoWork">
-               <property name="minimumSize">
-                <size>
-                 <width>113</width>
-                 <height>22</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>113</width>
-                 <height>22</height>
-                </size>
-               </property>
-               <property name="font">
-                <font>
-                 <pointsize>9</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>No</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>12</width>
-                 <height>12</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="1" column="1">
-              <widget class="QPushButton" name="ConfirmButtonAccount">
-               <property name="minimumSize">
-                <size>
-                 <width>113</width>
-                 <height>28</height>
-                </size>
-               </property>
-               <property name="maximumSize">
-                <size>
-                 <width>113</width>
-                 <height>28</height>
-                </size>
-               </property>
-               <property name="text">
-                <string>Confirm</string>
-               </property>
-              </widget>
-             </item>
-            </layout>
-           </item>
-           <item row="2" column="0">
-            <widget class="QLabel" name="label_13">
-             <property name="minimumSize">
-              <size>
-               <width>357</width>
-               <height>18</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>357</width>
-               <height>18</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>9</pointsize>
-               <weight>50</weight>
-               <italic>false</italic>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Charging station available?</string>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_10">
-             <property name="minimumSize">
-              <size>
-               <width>108</width>
-               <height>18</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>108</width>
-               <height>18</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>9</pointsize>
-               <weight>75</weight>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Work address:</string>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-         <item row="1" column="0">
+        <layout class="QGridLayout" name="gridLayout_3">
+         <item row="0" column="0">
           <layout class="QGridLayout" name="gridLayout_2">
-           <item row="4" column="0">
-            <widget class="QLabel" name="label_14">
-             <property name="minimumSize">
-              <size>
-               <width>357</width>
-               <height>18</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>357</width>
-               <height>18</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>9</pointsize>
-               <weight>50</weight>
-               <italic>false</italic>
-               <bold>false</bold>
-              </font>
-             </property>
-             <property name="text">
-              <string>Charging station available?</string>
-             </property>
-            </widget>
-           </item>
-           <item row="3" column="0">
+           <item row="2" column="0">
             <widget class="QLineEdit" name="HomeAddressInput">
              <property name="minimumSize">
               <size>
@@ -341,12 +111,12 @@
              </property>
              <property name="font">
               <font>
-               <pointsize>11</pointsize>
+               <pointsize>8</pointsize>
               </font>
              </property>
             </widget>
            </item>
-           <item row="5" column="0">
+           <item row="4" column="0">
             <layout class="QGridLayout" name="gridLayout_13">
              <item row="0" column="2">
               <widget class="QRadioButton" name="SharedHome">
@@ -364,7 +134,7 @@
                </property>
                <property name="font">
                 <font>
-                 <pointsize>9</pointsize>
+                 <pointsize>8</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -397,7 +167,7 @@
                </property>
                <property name="font">
                 <font>
-                 <pointsize>9</pointsize>
+                 <pointsize>8</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -430,7 +200,7 @@
                </property>
                <property name="font">
                 <font>
-                 <pointsize>9</pointsize>
+                 <pointsize>8</pointsize>
                 </font>
                </property>
                <property name="text">
@@ -449,7 +219,7 @@
              </item>
             </layout>
            </item>
-           <item row="2" column="0" alignment="Qt::AlignLeft">
+           <item row="1" column="0" alignment="Qt::AlignLeft">
             <widget class="QLabel" name="label">
              <property name="minimumSize">
               <size>
@@ -465,7 +235,7 @@
              </property>
              <property name="font">
               <font>
-               <pointsize>9</pointsize>
+               <pointsize>8</pointsize>
                <weight>75</weight>
                <bold>true</bold>
               </font>
@@ -475,60 +245,233 @@
              </property>
             </widget>
            </item>
-           <item row="0" column="0">
-            <layout class="QGridLayout" name="gridLayout_4">
-             <item row="0" column="0">
-              <widget class="QLabel" name="label_11">
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_14">
+             <property name="minimumSize">
+              <size>
+               <width>357</width>
+               <height>18</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>357</width>
+               <height>18</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Charging station available?</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item row="1" column="0">
+          <layout class="QGridLayout" name="gridLayout_8">
+           <item row="1" column="0">
+            <widget class="QLineEdit" name="WorkAddressInput">
+             <property name="minimumSize">
+              <size>
+               <width>357</width>
+               <height>28</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>357</width>
+               <height>28</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+              </font>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <layout class="QGridLayout" name="gridLayout_14">
+             <item row="0" column="2">
+              <widget class="QRadioButton" name="SharedWork">
                <property name="minimumSize">
                 <size>
-                 <width>48</width>
+                 <width>114</width>
                  <height>22</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>48</width>
+                 <width>114</width>
                  <height>22</height>
                 </size>
                </property>
                <property name="font">
                 <font>
-                 <pointsize>9</pointsize>
-                 <weight>75</weight>
-                 <bold>true</bold>
+                 <pointsize>8</pointsize>
                 </font>
                </property>
                <property name="text">
-                <string>Name:</string>
+                <string>Shared</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
                </property>
               </widget>
              </item>
-             <item row="1" column="0">
-              <widget class="QLineEdit" name="NameInput">
+             <item row="0" column="0">
+              <widget class="QRadioButton" name="YesWork">
                <property name="minimumSize">
                 <size>
-                 <width>357</width>
-                 <height>28</height>
+                 <width>114</width>
+                 <height>22</height>
                 </size>
                </property>
                <property name="maximumSize">
                 <size>
-                 <width>357</width>
-                 <height>28</height>
+                 <width>114</width>
+                 <height>22</height>
                 </size>
                </property>
                <property name="font">
                 <font>
-                 <pointsize>11</pointsize>
+                 <pointsize>8</pointsize>
                 </font>
+               </property>
+               <property name="text">
+                <string>Yes</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+              </widget>
+             </item>
+             <item row="0" column="1">
+              <widget class="QRadioButton" name="NoWork">
+               <property name="minimumSize">
+                <size>
+                 <width>113</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>113</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>8</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>No</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
                </property>
               </widget>
              </item>
             </layout>
            </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_13">
+             <property name="minimumSize">
+              <size>
+               <width>357</width>
+               <height>18</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>357</width>
+               <height>18</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>50</weight>
+               <italic>false</italic>
+               <bold>false</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Charging station available?</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_10">
+             <property name="minimumSize">
+              <size>
+               <width>108</width>
+               <height>18</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>108</width>
+               <height>18</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>8</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="text">
+              <string>Work address:</string>
+             </property>
+            </widget>
+           </item>
           </layout>
          </item>
         </layout>
+       </widget>
+       <widget class="QPushButton" name="ConfirmButtonAccount">
+        <property name="geometry">
+         <rect>
+          <x>150</x>
+          <y>310</y>
+          <width>113</width>
+          <height>28</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>113</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>113</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Confirm</string>
+        </property>
        </widget>
       </widget>
       <widget class="QWidget" name="TabDestination">
@@ -711,171 +654,11 @@
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QWidget" name="gridLayoutWidget_5">
-        <property name="geometry">
-         <rect>
-          <x>20</x>
-          <y>90</y>
-          <width>361</width>
-          <height>21</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>361</width>
-          <height>21</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>361</width>
-          <height>21</height>
-         </size>
-        </property>
-        <layout class="QGridLayout" name="gridLayout_11">
-         <item row="0" column="0">
-          <layout class="QGridLayout" name="gridLayout_12">
-           <item row="0" column="2">
-            <widget class="QLabel" name="label_18">
-             <property name="minimumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>2</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="1">
-            <widget class="QLabel" name="label_17">
-             <property name="minimumSize">
-              <size>
-               <width>53</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>53</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>1</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="0">
-            <widget class="QLabel" name="label_16">
-             <property name="minimumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>0</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="4">
-            <widget class="QLabel" name="label_20">
-             <property name="minimumSize">
-              <size>
-               <width>53</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>53</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>4</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="3">
-            <widget class="QLabel" name="label_19">
-             <property name="minimumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>3</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-           <item row="0" column="5">
-            <widget class="QLabel" name="label_21">
-             <property name="minimumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="maximumSize">
-              <size>
-               <width>54</width>
-               <height>17</height>
-              </size>
-             </property>
-             <property name="text">
-              <string>5</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignCenter</set>
-             </property>
-            </widget>
-           </item>
-          </layout>
-         </item>
-        </layout>
-       </widget>
        <widget class="QSlider" name="RatingSlider">
         <property name="geometry">
          <rect>
           <x>38</x>
-          <y>120</y>
+          <y>150</y>
           <width>325</width>
           <height>22</height>
          </rect>
@@ -937,8 +720,8 @@
        <widget class="QLabel" name="label_25">
         <property name="geometry">
          <rect>
-          <x>20</x>
-          <y>150</y>
+          <x>30</x>
+          <y>200</y>
           <width>357</width>
           <height>17</height>
          </rect>
@@ -957,6 +740,7 @@
         </property>
         <property name="font">
          <font>
+          <pointsize>8</pointsize>
           <weight>75</weight>
           <bold>true</bold>
          </font>
@@ -972,7 +756,7 @@
         <property name="geometry">
          <rect>
           <x>90</x>
-          <y>170</y>
+          <y>230</y>
           <width>271</width>
           <height>61</height>
          </rect>
@@ -1004,6 +788,11 @@
              <height>20</height>
             </size>
            </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Quantity</string>
            </property>
@@ -1022,6 +811,11 @@
              <width>131</width>
              <height>20</height>
             </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
            </property>
            <property name="text">
             <string>Accessability</string>
@@ -1042,6 +836,11 @@
              <height>20</height>
             </size>
            </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Location</string>
            </property>
@@ -1061,6 +860,11 @@
              <height>20</height>
             </size>
            </property>
+           <property name="font">
+            <font>
+             <pointsize>8</pointsize>
+            </font>
+           </property>
            <property name="text">
             <string>Condition</string>
            </property>
@@ -1071,8 +875,8 @@
        <widget class="QPushButton" name="ConfirmButtonRating">
         <property name="geometry">
          <rect>
-          <x>140</x>
-          <y>250</y>
+          <x>150</x>
+          <y>300</y>
           <width>113</width>
           <height>32</height>
          </rect>
@@ -1092,6 +896,150 @@
         <property name="text">
          <string>Confirm</string>
         </property>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>100</y>
+          <width>364</width>
+          <height>51</height>
+         </rect>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_12">
+         <item row="0" column="2">
+          <widget class="QLabel" name="label_18">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>2</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QLabel" name="label_17">
+           <property name="minimumSize">
+            <size>
+             <width>53</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>53</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>1</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="label_16">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>0</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="4">
+          <widget class="QLabel" name="label_20">
+           <property name="minimumSize">
+            <size>
+             <width>53</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>53</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>4</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="label_19">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>3</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="5">
+          <widget class="QLabel" name="label_21">
+           <property name="minimumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>54</width>
+             <height>17</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>5</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </widget>
      </widget>

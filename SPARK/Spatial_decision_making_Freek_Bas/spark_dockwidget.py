@@ -47,7 +47,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
 
     closingPlugin = pyqtSignal()
 
-    def __init__(self, iface, parent=None):
+    def __init__(self, iface,  parent=None):
         """Constructor."""
         super(Spatial_decision_making_Freek_BasDockWidget, self).__init__(parent)
         # Set up the user interface from Designer.
@@ -56,6 +56,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         # http://qt-project.org/doc/qt-4.8/designer-using-a-ui-file.html
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
+
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(False)
         self.TabAccount.setEnabled(True)
@@ -64,18 +65,13 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
         self.openScenario()
-        #self.initCheckBoxes()
-        #self.initComboBox()
-        #self.initslider()
+
 
         #input
         self.ConfirmButtonAccount.clicked.connect(self.ConfirmAccount)
         self.RateSpot.clicked.connect(self.ConfirmDestination)
-        #self.RateSpot.clicked.connect(self.deleteRoutes)
         self.ConfirmButtonRating.clicked.connect(self.ConfirmRating)
         self.EditButtonAccount.clicked.connect(self.EditAccount)
-        #self.ConfirmButtonDestination.clicked.connect(self.buildNetwork)
-        #self.ShowRoute.clicked.connect(self.calculateRoute)
 
         self.logoLabel.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
 
@@ -94,6 +90,18 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
     def openScenario(self):
         scenario_file =  os.path.join(self.plugin_dir,'sample_data','start_project.qgs')
         self.iface.addProject(unicode(scenario_file))
+
+    def getLayers(self):
+        layers = uf.getLegendLayers(self.iface, 'all', 'all')
+        if layers:
+            layer_names = uf.getLayersListNames(layers)
+        layers_dict = dict()
+        layers_dict['route'] = layer_names[0]
+        layers_dict['park'] = layer_names[1]
+        layers_dict['neighborhood'] = layer_names[2]
+        layers_dict['roads'] = layer_names[3]
+        layers_dict['rating'] = layer_names[4]
+        layers_dict['account'] = layer_names[5]
 
     def ConfirmAccount(self):
         self.LogList.append(self.HomeAddressInput.text())
@@ -122,6 +130,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(True)
         self.tabWidget.setCurrentIndex(2)
+
 
     def ConfirmRating(self):
         print(self.RatingList.currentItem())
@@ -203,22 +212,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
     #             routes_layer.deleteFeature(id)
     #         routes_layer.commitChanges()
     #
-    # def getNetwork(self): (skip)
-    #     roads_layer = self.getSelectedLayer()
-    #     if roads_layer:
-    #         # see if there is an obstacles layer to subtract roads from the network
-    #         obstacles_layer = uf.getLegendLayerByName(self.iface, "Obstacles")
-    #         if obstacles_layer:
-    #             # retrieve roads outside obstacles (inside = False)
-    #             features = uf.getFeaturesByIntersection(roads_layer, obstacles_layer, False)
-    #             # add these roads to a new temporary layer
-    #             road_network = uf.createTempLayer('Temp_Network','LINESTRING',roads_layer.crs().postgisSrid(),[],[])
-    #             road_network.dataProvider().addFeatures(features)
-    #         else:
-    #             road_network = roads_layer
-    #         return road_network
-    #     else:
-    #         return
+
     #
     # def getSelectedLayer(self):
     #     layer_name = self.selectLayerCombo.currentText()

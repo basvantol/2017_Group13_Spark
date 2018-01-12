@@ -179,9 +179,12 @@ class SpatialDecisionDockWidget(QtGui.QDockWidget, FORM_CLASS):
             layer_names = uf.getLayersListNames(layers)
             self.selectLayerCombo.addItems(layer_names)
             self.setSelectedLayer()
+            print(layer_names)
         else:
             self.selectAttributeCombo.clear()
             self.clearChart()
+
+
 
 
     def setSelectedLayer(self):

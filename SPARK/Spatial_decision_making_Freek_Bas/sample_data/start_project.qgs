@@ -8,10 +8,10 @@
     <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="2016_Rotterdam_parking20180110142813545" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/2016_Rotterdam_parking.shp" name="2016_Rotterdam_parking">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="NWB_2016_Rotterdam_roads_WO20180110142757617" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/NWB_2016_Rotterdam_roads_WO.shp" name="NWB_2016_Rotterdam_roads_WO">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Clipped20180112103632429" source="C:/Users/bvant/Desktop/Clipped buurt/Clipped buurt/buurt_rotterdam.shp" name="Buurt_Rotterdam">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="" checked="Qt::Checked" id="OpenLayers_plugin_layer20180110184125547" source="" name="Google Streets">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="Clipped20180112103238941" source="C:\Users\bvant\Desktop\Clipped buurt\clipped wegen\clipped wegen.shp" name="Wegen_Rotterdam">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -19,42 +19,40 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>494237.86541844095336273</xmin>
-      <ymin>6782629.73107654321938753</ymin>
-      <xmax>505928.43213292147265747</xmax>
-      <ymax>6789076.9721935736015439</ymax>
+      <xmin>87644.44590674461505841</xmin>
+      <ymin>429533.13889610790647566</ymin>
+      <xmax>105895.00734073323837947</xmax>
+      <ymax>445337.29811400757171214</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>1</projections>
     <destinationsrs>
       <spatialrefsys>
-        <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
-        <srsid>3857</srsid>
-        <srid>3857</srid>
-        <authid>EPSG:3857</authid>
-        <description>WGS 84 / Pseudo Mercator</description>
-        <projectionacronym>merc</projectionacronym>
-        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+        <srsid>2517</srsid>
+        <srid>28992</srid>
+        <authid>EPSG:28992</authid>
+        <description>Amersfoort / RD New</description>
+        <projectionacronym>sterea</projectionacronym>
+        <ellipsoidacronym>bessel</ellipsoidacronym>
         <geographicflag>false</geographicflag>
       </spatialrefsys>
     </destinationsrs>
     <rendermaptile>0</rendermaptile>
     <layer_coordinate_transform_info>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="2016_Rotterdam_parking20180110142813545"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stamen_Toner_OSM20180110183923750"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stamen_Watercolor_OSM20180110183936672"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180110183907314"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180110184053376"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="OpenLayers_plugin_layer20180110184125547"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="NWB_2016_Rotterdam_roads_WO20180110142757617"/>
-      <layer_coordinate_transform destAuthId="EPSG:3857" srcAuthId="EPSG:3857" srcDatumTransform="-1" destDatumTransform="-1" layerid="Stamen_Terrain_USA_OSM20180110184033500"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:4326" srcDatumTransform="-1" destDatumTransform="-1" layerid="2016_Rotterdam_parking20180110142813545"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="buurt_201620180112103504053"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="clipfile_voor_bas20180112103028160"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180112103238941"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="Clipped20180112103632429"/>
+      <layer_coordinate_transform destAuthId="EPSG:28992" srcAuthId="EPSG:28992" srcDatumTransform="-1" destDatumTransform="-1" layerid="NWB_2016_Rotterdam_roads_WO20180110142757617"/>
     </layer_coordinate_transform_info>
   </mapcanvas>
   <layer-tree-canvas>
     <custom-order enabled="0">
-      <item>NWB_2016_Rotterdam_roads_WO20180110142757617</item>
       <item>2016_Rotterdam_parking20180110142813545</item>
-      <item>OpenLayers_plugin_layer20180110184125547</item>
+      <item>Clipped20180112103238941</item>
+      <item>Clipped20180112103632429</item>
     </custom-order>
   </layer-tree-canvas>
   <legend updateDrawingOrder="true">
@@ -63,19 +61,25 @@
         <legendlayerfile isInOverview="0" layerid="2016_Rotterdam_parking20180110142813545" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="NWB_2016_Rotterdam_roads_WO" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Buurt_Rotterdam" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="NWB_2016_Rotterdam_roads_WO20180110142757617" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Clipped20180112103632429" visible="1"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Google Streets" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" open="true" checked="Qt::Checked" name="Wegen_Rotterdam" showFeatureCount="0">
       <filegroup open="true" hidden="false">
-        <legendlayerfile isInOverview="0" layerid="OpenLayers_plugin_layer20180110184125547" visible="1"/>
+        <legendlayerfile isInOverview="0" layerid="Clipped20180112103238941" visible="1"/>
       </filegroup>
     </legendlayer>
   </legend>
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>4.37238693200000039</xmin>
+        <ymin>51.87298035999999968</ymin>
+        <xmax>4.56666469600000013</xmax>
+        <ymax>51.95669663000000327</ymax>
+      </extent>
       <id>2016_Rotterdam_parking20180110142813545</id>
       <datasource>./2016_Rotterdam_parking.shp</datasource>
       <keywordList>
@@ -215,17 +219,17 @@
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <extent>
-        <xmin>51497.6889999999984866</xmin>
-        <ymin>422329.18300000001909211</ymin>
-        <xmax>106925.55999999999767169</xmax>
-        <ymax>451678.18300000001909211</ymax>
+        <xmin>86052.90087424019293394</xmin>
+        <ymin>430757.12099999998463318</ymin>
+        <xmax>101013.70300456734548789</xmax>
+        <ymax>445391.62545369286090136</ymax>
       </extent>
-      <id>NWB_2016_Rotterdam_roads_WO20180110142757617</id>
-      <datasource>./NWB_2016_Rotterdam_roads_WO.shp</datasource>
+      <id>Clipped20180112103238941</id>
+      <datasource>../../../../../../Desktop/Clipped buurt/clipped wegen/clipped wegen.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>NWB_2016_Rotterdam_roads_WO</layername>
+      <layername>Wegen_Rotterdam</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
@@ -392,7 +396,7 @@
               <prop k="customdash_unit" v="MM"/>
               <prop k="draw_inside_polygon" v="0"/>
               <prop k="joinstyle" v="bevel"/>
-              <prop k="line_color" v="115,115,115,255"/>
+              <prop k="line_color" v="0,0,0,255"/>
               <prop k="line_style" v="solid"/>
               <prop k="line_width" v="0.26"/>
               <prop k="line_width_unit" v="MM"/>
@@ -408,7 +412,149 @@
         <sizescale scalemethod="diameter"/>
       </renderer-v2>
       <labeling type="simple"/>
-      <customproperties/>
+      <customproperties>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="7.5"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="2"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
+      </customproperties>
       <blendMode>0</blendMode>
       <featureBlendMode>0</featureBlendMode>
       <layerTransparency>0</layerTransparency>
@@ -434,6 +580,34 @@
         <multilineenabled fieldname="" on=""/>
         <selectedonly on=""/>
       </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
       <annotationform>.</annotationform>
       <aliases>
         <alias field="sid" index="0" name=""/>
@@ -486,13 +660,76 @@
       <excludeAttributesWFS/>
       <attributeactions default="-1"/>
       <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
-        <columns/>
+        <columns>
+          <column width="-1" hidden="0" type="field" name="sid"/>
+          <column width="-1" hidden="0" type="field" name="wvk_id"/>
+          <column width="-1" hidden="0" type="field" name="wvk_begdat"/>
+          <column width="-1" hidden="0" type="field" name="jte_id_beg"/>
+          <column width="-1" hidden="0" type="field" name="jte_id_end"/>
+          <column width="-1" hidden="0" type="field" name="wegbehsrt"/>
+          <column width="-1" hidden="0" type="field" name="wegnummer"/>
+          <column width="-1" hidden="0" type="field" name="wegdeelltr"/>
+          <column width="-1" hidden="0" type="field" name="hecto_lttr"/>
+          <column width="-1" hidden="0" type="field" name="rpe_code"/>
+          <column width="-1" hidden="0" type="field" name="bst_code"/>
+          <column width="-1" hidden="0" type="field" name="admrichtng"/>
+          <column width="-1" hidden="0" type="field" name="rijrichtng"/>
+          <column width="-1" hidden="0" type="field" name="stt_naam"/>
+          <column width="-1" hidden="0" type="field" name="wpsnaamnen"/>
+          <column width="-1" hidden="0" type="field" name="gme_id"/>
+          <column width="-1" hidden="0" type="field" name="gme_naam"/>
+          <column width="-1" hidden="0" type="field" name="hnrstrlnks"/>
+          <column width="-1" hidden="0" type="field" name="hnrstrrhts"/>
+          <column width="-1" hidden="0" type="field" name="e_hnr_lnks"/>
+          <column width="-1" hidden="0" type="field" name="e_hnr_rhts"/>
+          <column width="-1" hidden="0" type="field" name="l_hnr_lnks"/>
+          <column width="-1" hidden="0" type="field" name="l_hnr_rhts"/>
+          <column width="-1" hidden="0" type="field" name="begafstand"/>
+          <column width="-1" hidden="0" type="field" name="endafstand"/>
+          <column width="-1" hidden="0" type="field" name="beginkm"/>
+          <column width="-1" hidden="0" type="field" name="eindkm"/>
+          <column width="-1" hidden="0" type="field" name="pos_tv_wol"/>
+          <column width="-1" hidden="0" type="field" name="wegbehcode"/>
+          <column width="-1" hidden="0" type="field" name="wegbehnaam"/>
+          <column width="-1" hidden="0" type="field" name="distrcode"/>
+          <column width="-1" hidden="0" type="field" name="distrnaam"/>
+          <column width="-1" hidden="0" type="field" name="dienstcode"/>
+          <column width="-1" hidden="0" type="field" name="dienstnaam"/>
+          <column width="-1" hidden="0" type="field" name="wegtype"/>
+          <column width="-1" hidden="0" type="field" name="wgtype_oms"/>
+          <column width="-1" hidden="0" type="field" name="routeltr"/>
+          <column width="-1" hidden="0" type="field" name="routenr"/>
+          <column width="-1" hidden="0" type="field" name="routeltr2"/>
+          <column width="-1" hidden="0" type="field" name="routenr2"/>
+          <column width="-1" hidden="0" type="field" name="routeltr3"/>
+          <column width="-1" hidden="0" type="field" name="routenr3"/>
+          <column width="-1" hidden="0" type="field" name="routeltr4"/>
+          <column width="-1" hidden="0" type="field" name="routenr4"/>
+          <column width="-1" hidden="0" type="field" name="wegnr_aw"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
       </attributetableconfig>
       <editform>.</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
       <editforminitfilepath>.</editforminitfilepath>
-      <editforminitcode><![CDATA[]]></editforminitcode>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
       <featformsuppress>0</featformsuppress>
       <editorlayout>generatedlayout</editorlayout>
       <widgets/>
@@ -547,52 +784,1102 @@
         <default field="routenr4" expression=""/>
         <default field="wegnr_aw" expression=""/>
       </defaults>
-      <previewExpression></previewExpression>
+      <previewExpression>COALESCE( "sid", '&lt;NULL>' )</previewExpression>
     </maplayer>
-    <maplayer minimumScale="0" maximumScale="1e+08" type="plugin" hasScaleBasedVisibilityFlag="0" name="openlayers">
-      <extent>
-        <xmin>-20037508.33999999985098839</xmin>
-        <ymin>-20037508.33999999985098839</ymin>
-        <xmax>20037508.33999999985098839</xmax>
-        <ymax>20037508.33999999985098839</ymax>
-      </extent>
-      <id>OpenLayers_plugin_layer20180110184125547</id>
-      <datasource></datasource>
+    <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Polygon" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <id>Clipped20180112103632429</id>
+      <datasource>../../../../../../Desktop/Clipped buurt/Clipped buurt/buurt_rotterdam.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
-      <layername>Google Streets</layername>
+      <layername>Buurt_Rotterdam</layername>
       <srs>
         <spatialrefsys>
-          <proj4>+proj=merc +a=6378137 +b=6378137 +lat_ts=0.0 +lon_0=0.0 +x_0=0.0 +y_0=0 +k=1.0 +units=m +nadgrids=@null +wktext +no_defs</proj4>
-          <srsid>3857</srsid>
-          <srid>3857</srid>
-          <authid>EPSG:3857</authid>
-          <description>WGS 84 / Pseudo Mercator</description>
-          <projectionacronym>merc</projectionacronym>
-          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <proj4>+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</proj4>
+          <srsid>2517</srsid>
+          <srid>28992</srid>
+          <authid>EPSG:28992</authid>
+          <description>Amersfoort / RD New</description>
+          <projectionacronym>sterea</projectionacronym>
+          <ellipsoidacronym>bessel</ellipsoidacronym>
           <geographicflag>false</geographicflag>
         </spatialrefsys>
       </srs>
+      <provider encoding="System">ogr</provider>
+      <vectorjoins/>
+      <layerDependencies/>
+      <expressionfields/>
+      <map-layer-style-manager current="">
+        <map-layer-style name=""/>
+      </map-layer-style-manager>
+      <edittypes>
+        <edittype widgetv2type="TextEdit" name="BU_CODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BU_NAAM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WK_CODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GM_CODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GM_NAAM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="IND_WBI">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WATER">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="POSTCODE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="DEK_PERC">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OAD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="STED">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AANT_INW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AANT_MAN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AANT_VROUW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_00_14_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_15_24_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_25_44_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_45_64_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_65_EO_JR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_ONGEHUWD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_GEHUWD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_GESCHEID">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_VERWEDUW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GEBOO_TOT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_GEBOO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="STERFT_TOT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_STERFT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BEV_DICHTH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AANTAL_HH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_EENP_HH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_HH_Z_K">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_HH_M_K">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="GEM_HH_GR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_WEST_AL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_N_W_AL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_MAROKKO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_ANT_ARU">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_SURINAM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_TURKIJE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_OVER_NW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_A">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_BF">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_GI">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_HJ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_KL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_MN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BED_RU">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BEDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WONINGEN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="WOZ">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_1GEZW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_MGEZW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_WONT2000">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="P_WONV2000">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AUTO_TOT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AUTO_HH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AUTO_LAND">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="BEDR_AUTO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="MOTOR_2W">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_LFTJ6J">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_LFTO6J">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BST_B">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="A_BST_NB">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_ZIEK_I">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_ZIEK_I">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV10ZIEK_I">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV20ZIEK_I">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_ZIEK_E">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_ZIEK_E">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV10ZIEK_E">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV20ZIEK_E">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_SUPERM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV1_SUPERM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV3_SUPERM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_SUPERM">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_DAGLMD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV1_DAGLMD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV3_DAGLMD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_DAGLMD">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_WARENH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_WARENH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV10WARENH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV20WARENH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_CAFE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV1_CAFE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV3_CAFE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_CAFE">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_CAFTAR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV1_CAFTAR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV3_CAFTAR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_CAFTAR">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_RESTAU">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV1_RESTAU">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV3_RESTAU">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_RESTAU">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_HOTEL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_HOTEL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV10_HOTEL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV20_HOTEL">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_KDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV1_KDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV3_KDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_KDV">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_BSO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV1_BSO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV3_BSO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_BSO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_BRANDW">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_OPRITH">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_TREINST">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_OVERST">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_ZWEMB">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_IJSBAAN">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_BIBLIO">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_BIOS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV5_BIOS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV10_BIOS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV20_BIOS">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_SAUNA">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_ZONBNK">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AF_ATTRAC">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV10ATTRAC">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV20ATTRAC">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="AV50ATTRAC">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OPP_TOT">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OPP_LAND">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+        <edittype widgetv2type="TextEdit" name="OPP_WATER">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
+      </edittypes>
+      <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
+        <symbols>
+          <symbol alpha="0.356863" clip_to_extent="1" type="fill" name="0">
+            <layer pass="0" class="SimpleFill" locked="0">
+              <prop k="border_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="color" v="1,190,77,255"/>
+              <prop k="joinstyle" v="bevel"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_style" v="solid"/>
+              <prop k="outline_width" v="0.26"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="style" v="solid"/>
+            </layer>
+          </symbol>
+        </symbols>
+        <rotation/>
+        <sizescale scalemethod="diameter"/>
+      </renderer-v2>
+      <labeling type="simple"/>
       <customproperties>
-        <property key="ol_layer_type" value="Google Streets"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="labeling" value="pal"/>
+        <property key="labeling/addDirectionSymbol" value="false"/>
+        <property key="labeling/angleOffset" value="0"/>
+        <property key="labeling/blendMode" value="0"/>
+        <property key="labeling/bufferBlendMode" value="0"/>
+        <property key="labeling/bufferColorA" value="255"/>
+        <property key="labeling/bufferColorB" value="255"/>
+        <property key="labeling/bufferColorG" value="255"/>
+        <property key="labeling/bufferColorR" value="255"/>
+        <property key="labeling/bufferDraw" value="false"/>
+        <property key="labeling/bufferJoinStyle" value="128"/>
+        <property key="labeling/bufferNoFill" value="false"/>
+        <property key="labeling/bufferSize" value="1"/>
+        <property key="labeling/bufferSizeInMapUnits" value="false"/>
+        <property key="labeling/bufferSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/bufferTransp" value="0"/>
+        <property key="labeling/centroidInside" value="false"/>
+        <property key="labeling/centroidWhole" value="false"/>
+        <property key="labeling/decimals" value="3"/>
+        <property key="labeling/displayAll" value="false"/>
+        <property key="labeling/dist" value="0"/>
+        <property key="labeling/distInMapUnits" value="false"/>
+        <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/drawLabels" value="false"/>
+        <property key="labeling/enabled" value="false"/>
+        <property key="labeling/fieldName" value=""/>
+        <property key="labeling/fitInPolygonOnly" value="false"/>
+        <property key="labeling/fontCapitals" value="0"/>
+        <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>
+        <property key="labeling/fontItalic" value="false"/>
+        <property key="labeling/fontLetterSpacing" value="0"/>
+        <property key="labeling/fontLimitPixelSize" value="false"/>
+        <property key="labeling/fontMaxPixelSize" value="10000"/>
+        <property key="labeling/fontMinPixelSize" value="3"/>
+        <property key="labeling/fontSize" value="7.5"/>
+        <property key="labeling/fontSizeInMapUnits" value="false"/>
+        <property key="labeling/fontSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/fontStrikeout" value="false"/>
+        <property key="labeling/fontUnderline" value="false"/>
+        <property key="labeling/fontWeight" value="50"/>
+        <property key="labeling/fontWordSpacing" value="0"/>
+        <property key="labeling/formatNumbers" value="false"/>
+        <property key="labeling/isExpression" value="true"/>
+        <property key="labeling/labelOffsetInMapUnits" value="true"/>
+        <property key="labeling/labelOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/labelPerPart" value="false"/>
+        <property key="labeling/leftDirectionSymbol" value="&lt;"/>
+        <property key="labeling/limitNumLabels" value="false"/>
+        <property key="labeling/maxCurvedCharAngleIn" value="25"/>
+        <property key="labeling/maxCurvedCharAngleOut" value="-25"/>
+        <property key="labeling/maxNumLabels" value="2000"/>
+        <property key="labeling/mergeLines" value="false"/>
+        <property key="labeling/minFeatureSize" value="0"/>
+        <property key="labeling/multilineAlign" value="4294967295"/>
+        <property key="labeling/multilineHeight" value="1"/>
+        <property key="labeling/namedStyle" value="Normal"/>
+        <property key="labeling/obstacle" value="true"/>
+        <property key="labeling/obstacleFactor" value="1"/>
+        <property key="labeling/obstacleType" value="0"/>
+        <property key="labeling/offsetType" value="0"/>
+        <property key="labeling/placeDirectionSymbol" value="0"/>
+        <property key="labeling/placement" value="1"/>
+        <property key="labeling/placementFlags" value="10"/>
+        <property key="labeling/plussign" value="false"/>
+        <property key="labeling/predefinedPositionOrder" value="TR,TL,BR,BL,R,L,TSR,BSR"/>
+        <property key="labeling/preserveRotation" value="true"/>
+        <property key="labeling/previewBkgrdColor" value="#ffffff"/>
+        <property key="labeling/priority" value="5"/>
+        <property key="labeling/quadOffset" value="4"/>
+        <property key="labeling/repeatDistance" value="0"/>
+        <property key="labeling/repeatDistanceMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/repeatDistanceUnit" value="1"/>
+        <property key="labeling/reverseDirectionSymbol" value="false"/>
+        <property key="labeling/rightDirectionSymbol" value=">"/>
+        <property key="labeling/scaleMax" value="10000000"/>
+        <property key="labeling/scaleMin" value="1"/>
+        <property key="labeling/scaleVisibility" value="false"/>
+        <property key="labeling/shadowBlendMode" value="6"/>
+        <property key="labeling/shadowColorB" value="0"/>
+        <property key="labeling/shadowColorG" value="0"/>
+        <property key="labeling/shadowColorR" value="0"/>
+        <property key="labeling/shadowDraw" value="false"/>
+        <property key="labeling/shadowOffsetAngle" value="135"/>
+        <property key="labeling/shadowOffsetDist" value="1"/>
+        <property key="labeling/shadowOffsetGlobal" value="true"/>
+        <property key="labeling/shadowOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowOffsetUnits" value="1"/>
+        <property key="labeling/shadowRadius" value="1.5"/>
+        <property key="labeling/shadowRadiusAlphaOnly" value="false"/>
+        <property key="labeling/shadowRadiusMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shadowRadiusUnits" value="1"/>
+        <property key="labeling/shadowScale" value="100"/>
+        <property key="labeling/shadowTransparency" value="30"/>
+        <property key="labeling/shadowUnder" value="0"/>
+        <property key="labeling/shapeBlendMode" value="0"/>
+        <property key="labeling/shapeBorderColorA" value="255"/>
+        <property key="labeling/shapeBorderColorB" value="128"/>
+        <property key="labeling/shapeBorderColorG" value="128"/>
+        <property key="labeling/shapeBorderColorR" value="128"/>
+        <property key="labeling/shapeBorderWidth" value="0"/>
+        <property key="labeling/shapeBorderWidthMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeBorderWidthUnits" value="1"/>
+        <property key="labeling/shapeDraw" value="false"/>
+        <property key="labeling/shapeFillColorA" value="255"/>
+        <property key="labeling/shapeFillColorB" value="255"/>
+        <property key="labeling/shapeFillColorG" value="255"/>
+        <property key="labeling/shapeFillColorR" value="255"/>
+        <property key="labeling/shapeJoinStyle" value="64"/>
+        <property key="labeling/shapeOffsetMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeOffsetUnits" value="1"/>
+        <property key="labeling/shapeOffsetX" value="0"/>
+        <property key="labeling/shapeOffsetY" value="0"/>
+        <property key="labeling/shapeRadiiMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeRadiiUnits" value="1"/>
+        <property key="labeling/shapeRadiiX" value="0"/>
+        <property key="labeling/shapeRadiiY" value="0"/>
+        <property key="labeling/shapeRotation" value="0"/>
+        <property key="labeling/shapeRotationType" value="0"/>
+        <property key="labeling/shapeSVGFile" value=""/>
+        <property key="labeling/shapeSizeMapUnitScale" value="0,0,0,0,0,0"/>
+        <property key="labeling/shapeSizeType" value="0"/>
+        <property key="labeling/shapeSizeUnits" value="1"/>
+        <property key="labeling/shapeSizeX" value="0"/>
+        <property key="labeling/shapeSizeY" value="0"/>
+        <property key="labeling/shapeTransparency" value="0"/>
+        <property key="labeling/shapeType" value="0"/>
+        <property key="labeling/substitutions" value="&lt;substitutions/>"/>
+        <property key="labeling/textColorA" value="255"/>
+        <property key="labeling/textColorB" value="0"/>
+        <property key="labeling/textColorG" value="0"/>
+        <property key="labeling/textColorR" value="0"/>
+        <property key="labeling/textTransp" value="0"/>
+        <property key="labeling/upsidedownLabels" value="0"/>
+        <property key="labeling/useSubstitutions" value="false"/>
+        <property key="labeling/wrapChar" value=""/>
+        <property key="labeling/xOffset" value="0"/>
+        <property key="labeling/yOffset" value="0"/>
+        <property key="labeling/zIndex" value="0"/>
+        <property key="variableNames"/>
+        <property key="variableValues"/>
       </customproperties>
+      <blendMode>0</blendMode>
+      <featureBlendMode>0</featureBlendMode>
+      <layerTransparency>0</layerTransparency>
+      <displayfield>P_GESCHEID</displayfield>
+      <label>0</label>
+      <labelattributes>
+        <label fieldname="" text="Label"/>
+        <family fieldname="" name="MS Shell Dlg 2"/>
+        <size fieldname="" units="pt" value="12"/>
+        <bold fieldname="" on="0"/>
+        <italic fieldname="" on="0"/>
+        <underline fieldname="" on="0"/>
+        <strikeout fieldname="" on="0"/>
+        <color fieldname="" red="0" blue="0" green="0"/>
+        <x fieldname=""/>
+        <y fieldname=""/>
+        <offset x="0" y="0" units="pt" yfieldname="" xfieldname=""/>
+        <angle fieldname="" value="0" auto="0"/>
+        <alignment fieldname="" value="center"/>
+        <buffercolor fieldname="" red="255" blue="255" green="255"/>
+        <buffersize fieldname="" units="pt" value="1"/>
+        <bufferenabled fieldname="" on=""/>
+        <multilineenabled fieldname="" on=""/>
+        <selectedonly on=""/>
+      </labelattributes>
+      <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
+        <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
+          <fontProperties description="MS Shell Dlg 2,7.5,-1,5,50,0,0,0,0,0" style=""/>
+        </DiagramCategory>
+        <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
+          <layer pass="0" class="SimpleMarker" locked="0">
+            <prop k="angle" v="0"/>
+            <prop k="color" v="255,0,0,255"/>
+            <prop k="horizontal_anchor_point" v="1"/>
+            <prop k="joinstyle" v="bevel"/>
+            <prop k="name" v="circle"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="0,0,0,255"/>
+            <prop k="outline_style" v="solid"/>
+            <prop k="outline_width" v="0"/>
+            <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="scale_method" v="diameter"/>
+            <prop k="size" v="2"/>
+            <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+            <prop k="size_unit" v="MM"/>
+            <prop k="vertical_anchor_point" v="1"/>
+          </layer>
+        </symbol>
+      </SingleCategoryDiagramRenderer>
+      <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
+      <annotationform></annotationform>
+      <aliases>
+        <alias field="BU_CODE" index="0" name=""/>
+        <alias field="BU_NAAM" index="1" name=""/>
+        <alias field="WK_CODE" index="2" name=""/>
+        <alias field="GM_CODE" index="3" name=""/>
+        <alias field="GM_NAAM" index="4" name=""/>
+        <alias field="IND_WBI" index="5" name=""/>
+        <alias field="WATER" index="6" name=""/>
+        <alias field="POSTCODE" index="7" name=""/>
+        <alias field="DEK_PERC" index="8" name=""/>
+        <alias field="OAD" index="9" name=""/>
+        <alias field="STED" index="10" name=""/>
+        <alias field="AANT_INW" index="11" name=""/>
+        <alias field="AANT_MAN" index="12" name=""/>
+        <alias field="AANT_VROUW" index="13" name=""/>
+        <alias field="P_00_14_JR" index="14" name=""/>
+        <alias field="P_15_24_JR" index="15" name=""/>
+        <alias field="P_25_44_JR" index="16" name=""/>
+        <alias field="P_45_64_JR" index="17" name=""/>
+        <alias field="P_65_EO_JR" index="18" name=""/>
+        <alias field="P_ONGEHUWD" index="19" name=""/>
+        <alias field="P_GEHUWD" index="20" name=""/>
+        <alias field="P_GESCHEID" index="21" name=""/>
+        <alias field="P_VERWEDUW" index="22" name=""/>
+        <alias field="GEBOO_TOT" index="23" name=""/>
+        <alias field="P_GEBOO" index="24" name=""/>
+        <alias field="STERFT_TOT" index="25" name=""/>
+        <alias field="P_STERFT" index="26" name=""/>
+        <alias field="BEV_DICHTH" index="27" name=""/>
+        <alias field="AANTAL_HH" index="28" name=""/>
+        <alias field="P_EENP_HH" index="29" name=""/>
+        <alias field="P_HH_Z_K" index="30" name=""/>
+        <alias field="P_HH_M_K" index="31" name=""/>
+        <alias field="GEM_HH_GR" index="32" name=""/>
+        <alias field="P_WEST_AL" index="33" name=""/>
+        <alias field="P_N_W_AL" index="34" name=""/>
+        <alias field="P_MAROKKO" index="35" name=""/>
+        <alias field="P_ANT_ARU" index="36" name=""/>
+        <alias field="P_SURINAM" index="37" name=""/>
+        <alias field="P_TURKIJE" index="38" name=""/>
+        <alias field="P_OVER_NW" index="39" name=""/>
+        <alias field="A_BED_A" index="40" name=""/>
+        <alias field="A_BED_BF" index="41" name=""/>
+        <alias field="A_BED_GI" index="42" name=""/>
+        <alias field="A_BED_HJ" index="43" name=""/>
+        <alias field="A_BED_KL" index="44" name=""/>
+        <alias field="A_BED_MN" index="45" name=""/>
+        <alias field="A_BED_RU" index="46" name=""/>
+        <alias field="A_BEDV" index="47" name=""/>
+        <alias field="WONINGEN" index="48" name=""/>
+        <alias field="WOZ" index="49" name=""/>
+        <alias field="P_1GEZW" index="50" name=""/>
+        <alias field="P_MGEZW" index="51" name=""/>
+        <alias field="P_WONT2000" index="52" name=""/>
+        <alias field="P_WONV2000" index="53" name=""/>
+        <alias field="AUTO_TOT" index="54" name=""/>
+        <alias field="AUTO_HH" index="55" name=""/>
+        <alias field="AUTO_LAND" index="56" name=""/>
+        <alias field="BEDR_AUTO" index="57" name=""/>
+        <alias field="MOTOR_2W" index="58" name=""/>
+        <alias field="A_LFTJ6J" index="59" name=""/>
+        <alias field="A_LFTO6J" index="60" name=""/>
+        <alias field="A_BST_B" index="61" name=""/>
+        <alias field="A_BST_NB" index="62" name=""/>
+        <alias field="AF_ZIEK_I" index="63" name=""/>
+        <alias field="AV5_ZIEK_I" index="64" name=""/>
+        <alias field="AV10ZIEK_I" index="65" name=""/>
+        <alias field="AV20ZIEK_I" index="66" name=""/>
+        <alias field="AF_ZIEK_E" index="67" name=""/>
+        <alias field="AV5_ZIEK_E" index="68" name=""/>
+        <alias field="AV10ZIEK_E" index="69" name=""/>
+        <alias field="AV20ZIEK_E" index="70" name=""/>
+        <alias field="AF_SUPERM" index="71" name=""/>
+        <alias field="AV1_SUPERM" index="72" name=""/>
+        <alias field="AV3_SUPERM" index="73" name=""/>
+        <alias field="AV5_SUPERM" index="74" name=""/>
+        <alias field="AF_DAGLMD" index="75" name=""/>
+        <alias field="AV1_DAGLMD" index="76" name=""/>
+        <alias field="AV3_DAGLMD" index="77" name=""/>
+        <alias field="AV5_DAGLMD" index="78" name=""/>
+        <alias field="AF_WARENH" index="79" name=""/>
+        <alias field="AV5_WARENH" index="80" name=""/>
+        <alias field="AV10WARENH" index="81" name=""/>
+        <alias field="AV20WARENH" index="82" name=""/>
+        <alias field="AF_CAFE" index="83" name=""/>
+        <alias field="AV1_CAFE" index="84" name=""/>
+        <alias field="AV3_CAFE" index="85" name=""/>
+        <alias field="AV5_CAFE" index="86" name=""/>
+        <alias field="AF_CAFTAR" index="87" name=""/>
+        <alias field="AV1_CAFTAR" index="88" name=""/>
+        <alias field="AV3_CAFTAR" index="89" name=""/>
+        <alias field="AV5_CAFTAR" index="90" name=""/>
+        <alias field="AF_RESTAU" index="91" name=""/>
+        <alias field="AV1_RESTAU" index="92" name=""/>
+        <alias field="AV3_RESTAU" index="93" name=""/>
+        <alias field="AV5_RESTAU" index="94" name=""/>
+        <alias field="AF_HOTEL" index="95" name=""/>
+        <alias field="AV5_HOTEL" index="96" name=""/>
+        <alias field="AV10_HOTEL" index="97" name=""/>
+        <alias field="AV20_HOTEL" index="98" name=""/>
+        <alias field="AF_KDV" index="99" name=""/>
+        <alias field="AV1_KDV" index="100" name=""/>
+        <alias field="AV3_KDV" index="101" name=""/>
+        <alias field="AV5_KDV" index="102" name=""/>
+        <alias field="AF_BSO" index="103" name=""/>
+        <alias field="AV1_BSO" index="104" name=""/>
+        <alias field="AV3_BSO" index="105" name=""/>
+        <alias field="AV5_BSO" index="106" name=""/>
+        <alias field="AF_BRANDW" index="107" name=""/>
+        <alias field="AF_OPRITH" index="108" name=""/>
+        <alias field="AF_TREINST" index="109" name=""/>
+        <alias field="AF_OVERST" index="110" name=""/>
+        <alias field="AF_ZWEMB" index="111" name=""/>
+        <alias field="AF_IJSBAAN" index="112" name=""/>
+        <alias field="AF_BIBLIO" index="113" name=""/>
+        <alias field="AF_BIOS" index="114" name=""/>
+        <alias field="AV5_BIOS" index="115" name=""/>
+        <alias field="AV10_BIOS" index="116" name=""/>
+        <alias field="AV20_BIOS" index="117" name=""/>
+        <alias field="AF_SAUNA" index="118" name=""/>
+        <alias field="AF_ZONBNK" index="119" name=""/>
+        <alias field="AF_ATTRAC" index="120" name=""/>
+        <alias field="AV10ATTRAC" index="121" name=""/>
+        <alias field="AV20ATTRAC" index="122" name=""/>
+        <alias field="AV50ATTRAC" index="123" name=""/>
+        <alias field="OPP_TOT" index="124" name=""/>
+        <alias field="OPP_LAND" index="125" name=""/>
+        <alias field="OPP_WATER" index="126" name=""/>
+      </aliases>
+      <excludeAttributesWMS/>
+      <excludeAttributesWFS/>
+      <attributeactions default="-1"/>
+      <attributetableconfig actionWidgetStyle="dropDown" sortExpression="" sortOrder="0">
+        <columns>
+          <column width="-1" hidden="0" type="field" name="BU_CODE"/>
+          <column width="109" hidden="0" type="field" name="BU_NAAM"/>
+          <column width="-1" hidden="0" type="field" name="WK_CODE"/>
+          <column width="-1" hidden="0" type="field" name="GM_CODE"/>
+          <column width="-1" hidden="0" type="field" name="GM_NAAM"/>
+          <column width="-1" hidden="0" type="field" name="IND_WBI"/>
+          <column width="-1" hidden="0" type="field" name="WATER"/>
+          <column width="-1" hidden="0" type="field" name="POSTCODE"/>
+          <column width="-1" hidden="0" type="field" name="DEK_PERC"/>
+          <column width="-1" hidden="0" type="field" name="OAD"/>
+          <column width="-1" hidden="0" type="field" name="STED"/>
+          <column width="-1" hidden="0" type="field" name="AANT_INW"/>
+          <column width="-1" hidden="0" type="field" name="AANT_MAN"/>
+          <column width="-1" hidden="0" type="field" name="AANT_VROUW"/>
+          <column width="-1" hidden="0" type="field" name="P_00_14_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_15_24_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_25_44_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_45_64_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_65_EO_JR"/>
+          <column width="-1" hidden="0" type="field" name="P_ONGEHUWD"/>
+          <column width="-1" hidden="0" type="field" name="P_GEHUWD"/>
+          <column width="-1" hidden="0" type="field" name="P_GESCHEID"/>
+          <column width="-1" hidden="0" type="field" name="P_VERWEDUW"/>
+          <column width="-1" hidden="0" type="field" name="GEBOO_TOT"/>
+          <column width="-1" hidden="0" type="field" name="P_GEBOO"/>
+          <column width="-1" hidden="0" type="field" name="STERFT_TOT"/>
+          <column width="-1" hidden="0" type="field" name="P_STERFT"/>
+          <column width="-1" hidden="0" type="field" name="BEV_DICHTH"/>
+          <column width="-1" hidden="0" type="field" name="AANTAL_HH"/>
+          <column width="-1" hidden="0" type="field" name="P_EENP_HH"/>
+          <column width="-1" hidden="0" type="field" name="P_HH_Z_K"/>
+          <column width="-1" hidden="0" type="field" name="P_HH_M_K"/>
+          <column width="-1" hidden="0" type="field" name="GEM_HH_GR"/>
+          <column width="-1" hidden="0" type="field" name="P_WEST_AL"/>
+          <column width="-1" hidden="0" type="field" name="P_N_W_AL"/>
+          <column width="-1" hidden="0" type="field" name="P_MAROKKO"/>
+          <column width="-1" hidden="0" type="field" name="P_ANT_ARU"/>
+          <column width="-1" hidden="0" type="field" name="P_SURINAM"/>
+          <column width="-1" hidden="0" type="field" name="P_TURKIJE"/>
+          <column width="-1" hidden="0" type="field" name="P_OVER_NW"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_A"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_BF"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_GI"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_HJ"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_KL"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_MN"/>
+          <column width="-1" hidden="0" type="field" name="A_BED_RU"/>
+          <column width="-1" hidden="0" type="field" name="A_BEDV"/>
+          <column width="-1" hidden="0" type="field" name="WONINGEN"/>
+          <column width="-1" hidden="0" type="field" name="WOZ"/>
+          <column width="-1" hidden="0" type="field" name="P_1GEZW"/>
+          <column width="-1" hidden="0" type="field" name="P_MGEZW"/>
+          <column width="-1" hidden="0" type="field" name="P_WONT2000"/>
+          <column width="-1" hidden="0" type="field" name="P_WONV2000"/>
+          <column width="-1" hidden="0" type="field" name="AUTO_TOT"/>
+          <column width="-1" hidden="0" type="field" name="AUTO_HH"/>
+          <column width="-1" hidden="0" type="field" name="AUTO_LAND"/>
+          <column width="-1" hidden="0" type="field" name="BEDR_AUTO"/>
+          <column width="-1" hidden="0" type="field" name="MOTOR_2W"/>
+          <column width="-1" hidden="0" type="field" name="A_LFTJ6J"/>
+          <column width="-1" hidden="0" type="field" name="A_LFTO6J"/>
+          <column width="-1" hidden="0" type="field" name="A_BST_B"/>
+          <column width="-1" hidden="0" type="field" name="A_BST_NB"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AV5_ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AV10ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AV20ZIEK_I"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AV5_ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AV10ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AV20ZIEK_E"/>
+          <column width="-1" hidden="0" type="field" name="AF_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AV1_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AV3_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AV5_SUPERM"/>
+          <column width="-1" hidden="0" type="field" name="AF_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AV1_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AV3_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AV5_DAGLMD"/>
+          <column width="-1" hidden="0" type="field" name="AF_WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AV5_WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AV10WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AV20WARENH"/>
+          <column width="-1" hidden="0" type="field" name="AF_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AV1_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AV3_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AV5_CAFE"/>
+          <column width="-1" hidden="0" type="field" name="AF_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AV1_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AV3_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AV5_CAFTAR"/>
+          <column width="-1" hidden="0" type="field" name="AF_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AV1_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AV3_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AV5_RESTAU"/>
+          <column width="-1" hidden="0" type="field" name="AF_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AV5_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AV10_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AV20_HOTEL"/>
+          <column width="-1" hidden="0" type="field" name="AF_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AV1_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AV3_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AV5_KDV"/>
+          <column width="-1" hidden="0" type="field" name="AF_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AV1_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AV3_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AV5_BSO"/>
+          <column width="-1" hidden="0" type="field" name="AF_BRANDW"/>
+          <column width="-1" hidden="0" type="field" name="AF_OPRITH"/>
+          <column width="-1" hidden="0" type="field" name="AF_TREINST"/>
+          <column width="-1" hidden="0" type="field" name="AF_OVERST"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZWEMB"/>
+          <column width="-1" hidden="0" type="field" name="AF_IJSBAAN"/>
+          <column width="-1" hidden="0" type="field" name="AF_BIBLIO"/>
+          <column width="-1" hidden="0" type="field" name="AF_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AV5_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AV10_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AV20_BIOS"/>
+          <column width="-1" hidden="0" type="field" name="AF_SAUNA"/>
+          <column width="-1" hidden="0" type="field" name="AF_ZONBNK"/>
+          <column width="-1" hidden="0" type="field" name="AF_ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="AV10ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="AV20ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="AV50ATTRAC"/>
+          <column width="-1" hidden="0" type="field" name="OPP_TOT"/>
+          <column width="-1" hidden="0" type="field" name="OPP_LAND"/>
+          <column width="-1" hidden="0" type="field" name="OPP_WATER"/>
+          <column width="-1" hidden="1" type="actions"/>
+        </columns>
+      </attributetableconfig>
+      <editform></editform>
+      <editforminit/>
+      <editforminitcodesource>0</editforminitcodesource>
+      <editforminitfilepath></editforminitfilepath>
+      <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
+"""
+QGIS forms can have a Python function that is called when the form is
+opened.
+
+Use this function to add extra logic to your forms.
+
+Enter the name of the function in the "Python Init function"
+field.
+An example follows:
+"""
+from qgis.PyQt.QtWidgets import QWidget
+
+def my_form_open(dialog, layer, feature):
+	geom = feature.geometry()
+	control = dialog.findChild(QWidget, "MyLineEdit")
+]]></editforminitcode>
+      <featformsuppress>0</featformsuppress>
+      <editorlayout>generatedlayout</editorlayout>
+      <widgets/>
+      <conditionalstyles>
+        <rowstyles/>
+        <fieldstyles/>
+      </conditionalstyles>
+      <defaults>
+        <default field="BU_CODE" expression=""/>
+        <default field="BU_NAAM" expression=""/>
+        <default field="WK_CODE" expression=""/>
+        <default field="GM_CODE" expression=""/>
+        <default field="GM_NAAM" expression=""/>
+        <default field="IND_WBI" expression=""/>
+        <default field="WATER" expression=""/>
+        <default field="POSTCODE" expression=""/>
+        <default field="DEK_PERC" expression=""/>
+        <default field="OAD" expression=""/>
+        <default field="STED" expression=""/>
+        <default field="AANT_INW" expression=""/>
+        <default field="AANT_MAN" expression=""/>
+        <default field="AANT_VROUW" expression=""/>
+        <default field="P_00_14_JR" expression=""/>
+        <default field="P_15_24_JR" expression=""/>
+        <default field="P_25_44_JR" expression=""/>
+        <default field="P_45_64_JR" expression=""/>
+        <default field="P_65_EO_JR" expression=""/>
+        <default field="P_ONGEHUWD" expression=""/>
+        <default field="P_GEHUWD" expression=""/>
+        <default field="P_GESCHEID" expression=""/>
+        <default field="P_VERWEDUW" expression=""/>
+        <default field="GEBOO_TOT" expression=""/>
+        <default field="P_GEBOO" expression=""/>
+        <default field="STERFT_TOT" expression=""/>
+        <default field="P_STERFT" expression=""/>
+        <default field="BEV_DICHTH" expression=""/>
+        <default field="AANTAL_HH" expression=""/>
+        <default field="P_EENP_HH" expression=""/>
+        <default field="P_HH_Z_K" expression=""/>
+        <default field="P_HH_M_K" expression=""/>
+        <default field="GEM_HH_GR" expression=""/>
+        <default field="P_WEST_AL" expression=""/>
+        <default field="P_N_W_AL" expression=""/>
+        <default field="P_MAROKKO" expression=""/>
+        <default field="P_ANT_ARU" expression=""/>
+        <default field="P_SURINAM" expression=""/>
+        <default field="P_TURKIJE" expression=""/>
+        <default field="P_OVER_NW" expression=""/>
+        <default field="A_BED_A" expression=""/>
+        <default field="A_BED_BF" expression=""/>
+        <default field="A_BED_GI" expression=""/>
+        <default field="A_BED_HJ" expression=""/>
+        <default field="A_BED_KL" expression=""/>
+        <default field="A_BED_MN" expression=""/>
+        <default field="A_BED_RU" expression=""/>
+        <default field="A_BEDV" expression=""/>
+        <default field="WONINGEN" expression=""/>
+        <default field="WOZ" expression=""/>
+        <default field="P_1GEZW" expression=""/>
+        <default field="P_MGEZW" expression=""/>
+        <default field="P_WONT2000" expression=""/>
+        <default field="P_WONV2000" expression=""/>
+        <default field="AUTO_TOT" expression=""/>
+        <default field="AUTO_HH" expression=""/>
+        <default field="AUTO_LAND" expression=""/>
+        <default field="BEDR_AUTO" expression=""/>
+        <default field="MOTOR_2W" expression=""/>
+        <default field="A_LFTJ6J" expression=""/>
+        <default field="A_LFTO6J" expression=""/>
+        <default field="A_BST_B" expression=""/>
+        <default field="A_BST_NB" expression=""/>
+        <default field="AF_ZIEK_I" expression=""/>
+        <default field="AV5_ZIEK_I" expression=""/>
+        <default field="AV10ZIEK_I" expression=""/>
+        <default field="AV20ZIEK_I" expression=""/>
+        <default field="AF_ZIEK_E" expression=""/>
+        <default field="AV5_ZIEK_E" expression=""/>
+        <default field="AV10ZIEK_E" expression=""/>
+        <default field="AV20ZIEK_E" expression=""/>
+        <default field="AF_SUPERM" expression=""/>
+        <default field="AV1_SUPERM" expression=""/>
+        <default field="AV3_SUPERM" expression=""/>
+        <default field="AV5_SUPERM" expression=""/>
+        <default field="AF_DAGLMD" expression=""/>
+        <default field="AV1_DAGLMD" expression=""/>
+        <default field="AV3_DAGLMD" expression=""/>
+        <default field="AV5_DAGLMD" expression=""/>
+        <default field="AF_WARENH" expression=""/>
+        <default field="AV5_WARENH" expression=""/>
+        <default field="AV10WARENH" expression=""/>
+        <default field="AV20WARENH" expression=""/>
+        <default field="AF_CAFE" expression=""/>
+        <default field="AV1_CAFE" expression=""/>
+        <default field="AV3_CAFE" expression=""/>
+        <default field="AV5_CAFE" expression=""/>
+        <default field="AF_CAFTAR" expression=""/>
+        <default field="AV1_CAFTAR" expression=""/>
+        <default field="AV3_CAFTAR" expression=""/>
+        <default field="AV5_CAFTAR" expression=""/>
+        <default field="AF_RESTAU" expression=""/>
+        <default field="AV1_RESTAU" expression=""/>
+        <default field="AV3_RESTAU" expression=""/>
+        <default field="AV5_RESTAU" expression=""/>
+        <default field="AF_HOTEL" expression=""/>
+        <default field="AV5_HOTEL" expression=""/>
+        <default field="AV10_HOTEL" expression=""/>
+        <default field="AV20_HOTEL" expression=""/>
+        <default field="AF_KDV" expression=""/>
+        <default field="AV1_KDV" expression=""/>
+        <default field="AV3_KDV" expression=""/>
+        <default field="AV5_KDV" expression=""/>
+        <default field="AF_BSO" expression=""/>
+        <default field="AV1_BSO" expression=""/>
+        <default field="AV3_BSO" expression=""/>
+        <default field="AV5_BSO" expression=""/>
+        <default field="AF_BRANDW" expression=""/>
+        <default field="AF_OPRITH" expression=""/>
+        <default field="AF_TREINST" expression=""/>
+        <default field="AF_OVERST" expression=""/>
+        <default field="AF_ZWEMB" expression=""/>
+        <default field="AF_IJSBAAN" expression=""/>
+        <default field="AF_BIBLIO" expression=""/>
+        <default field="AF_BIOS" expression=""/>
+        <default field="AV5_BIOS" expression=""/>
+        <default field="AV10_BIOS" expression=""/>
+        <default field="AV20_BIOS" expression=""/>
+        <default field="AF_SAUNA" expression=""/>
+        <default field="AF_ZONBNK" expression=""/>
+        <default field="AF_ATTRAC" expression=""/>
+        <default field="AV10ATTRAC" expression=""/>
+        <default field="AV20ATTRAC" expression=""/>
+        <default field="AV50ATTRAC" expression=""/>
+        <default field="OPP_TOT" expression=""/>
+        <default field="OPP_LAND" expression=""/>
+        <default field="OPP_WATER" expression=""/>
+      </defaults>
+      <previewExpression>COALESCE( "P_GESCHEID", '&lt;NULL>' )</previewExpression>
     </maplayer>
   </projectlayers>
   <properties>
-    <Measurement>
-      <DistanceUnits type="QString"></DistanceUnits>
-      <AreaUnits type="QString"></AreaUnits>
-    </Measurement>
-    <SpatialRefSys>
-      <ProjectCRSProj4String type="QString">+proj=longlat +datum=WGS84 +no_defs</ProjectCRSProj4String>
-      <ProjectCrs type="QString">EPSG:4326</ProjectCrs>
-      <ProjectCRSID type="int">3452</ProjectCRSID>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
+    <Variables>
+      <variableNames type="QStringList"/>
+      <variableValues type="QStringList"/>
+    </Variables>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WFSUrl type="QString"></WFSUrl>
     <Paths>
       <Absolute type="bool">false</Absolute>
     </Paths>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WFSLayers type="QStringList"/>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSRestrictedComposers type="QStringList"/>
+    <WMSRestrictedLayers type="QStringList"/>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <Measure>
+      <Ellipsoid type="QString">NONE</Ellipsoid>
+    </Measure>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <WFSTLayers>
+      <Insert type="QStringList"/>
+      <Update type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
     <Gui>
       <SelectionColorBluePart type="int">0</SelectionColorBluePart>
       <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
@@ -606,9 +1893,11 @@
       <DefaultSnapToleranceUnit type="int">2</DefaultSnapToleranceUnit>
       <LayerSnappingList type="QStringList">
         <value>2016_Rotterdam_parking20180110142813545</value>
-        <value>NWB_2016_Rotterdam_roads_WO20180110142757617</value>
+        <value>Clipped20180112103238941</value>
+        <value>Clipped20180112103632429</value>
       </LayerSnappingList>
       <LayerSnappingEnabledList type="QStringList">
+        <value>disabled</value>
         <value>disabled</value>
         <value>disabled</value>
       </LayerSnappingEnabledList>
@@ -617,8 +1906,10 @@
       <LayerSnappingToleranceUnitList type="QStringList">
         <value>2</value>
         <value>2</value>
+        <value>2</value>
       </LayerSnappingToleranceUnitList>
       <LayerSnapToList type="QStringList">
+        <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
         <value>to_vertex_and_segment</value>
       </LayerSnapToList>
@@ -627,15 +1918,41 @@
       <LayerSnappingToleranceList type="QStringList">
         <value>0.000000</value>
         <value>0.000000</value>
+        <value>0.000000</value>
       </LayerSnappingToleranceList>
     </Digitizing>
-    <PositionPrecision>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
+    <Identify>
+      <disabledLayers type="QStringList"/>
+    </Identify>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WCSLayers type="QStringList"/>
     <Legend>
       <filterByMap type="bool">false</filterByMap>
     </Legend>
+    <SpatialRefSys>
+      <ProjectCRSProj4String type="QString">+proj=sterea +lat_0=52.15616055555555 +lon_0=5.38763888888889 +k=0.9999079 +x_0=155000 +y_0=463000 +ellps=bessel +towgs84=565.2369,50.0087,465.658,-0.406857,0.350733,-1.87035,4.0812 +units=m +no_defs</ProjectCRSProj4String>
+      <ProjectCrs type="QString">EPSG:28992</ProjectCrs>
+      <ProjectCRSID type="int">2517</ProjectCRSID>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <DefaultStyles>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <AlphaInt type="int">255</AlphaInt>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <WMSUrl type="QString"></WMSUrl>
   </properties>
   <visibility-presets/>
 </qgis>

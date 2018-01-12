@@ -22,7 +22,6 @@
 """
 
 import os
-import pandas as pd
 
 from PyQt4 import QtGui, uic
 from PyQt4.QtCore import pyqtSignal
@@ -64,8 +63,6 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.EditButtonAccount.clicked.connect(self.EditAccount)
 
         self.logoLabel.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
-
-        data_mun = pd.read_csv('mun.csv')
 
 
 

@@ -105,3 +105,10 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.EditButtonAccount.setEnabled(False)
         self.tabWidget.setCurrentIndex(0)
 
+
+    def getLayer(self, name):
+        legend = self.iface.legendInterface()
+        for layer in legend.layers():
+            if layer.name() == name:
+                return layer
+        raise KeyError("layer does not exist")

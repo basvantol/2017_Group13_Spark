@@ -71,11 +71,11 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         #input
         self.ConfirmButtonAccount.clicked.connect(self.ConfirmAccount)
         self.RateSpot.clicked.connect(self.ConfirmDestination)
-        self.RateSpot.clicked.connect(self.deleteRoutes)
+        #self.RateSpot.clicked.connect(self.deleteRoutes)
         self.ConfirmButtonRating.clicked.connect(self.ConfirmRating)
         self.EditButtonAccount.clicked.connect(self.EditAccount)
-        self.ConfirmButtonDestination.clicked.connect(self.buildNetwork)
-        self.ShowRoute.clicked.connect(self.calculateRoute)
+        #self.ConfirmButtonDestination.clicked.connect(self.buildNetwork)
+        #self.ShowRoute.clicked.connect(self.calculateRoute)
 
         self.logoLabel.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
 

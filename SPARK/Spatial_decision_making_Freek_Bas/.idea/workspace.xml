@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41c0edf7-8e8b-4260-bffb-c40e25be5746" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_dockwidget_base.ui" afterPath="$PROJECT_DIR$/spark_dockwidget_base.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/start_project.qgs" afterPath="$PROJECT_DIR$/sample_data/start_project.qgs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_dockwidget.py" afterPath="$PROJECT_DIR$/spark_dockwidget.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -13,11 +14,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="spark_dockwidget.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spark_dockwidget.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="247">
-              <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+            <state relative-caret-position="147">
+              <caret line="167" column="62" lean-forward="false" selection-start-line="167" selection-start-column="62" selection-end-line="167" selection-end-column="62" />
               <folding>
                 <element signature="e#1155#1164#0" expanded="true" />
               </folding>
@@ -25,11 +26,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spatial_decision_dockwidget.py" pinned="false" current-in-tab="true">
-        <entry file="file://$USER_HOME$/Desktop/GEO1005-GeoCharge-Group-11-master/GEO1005-GeoCharge-Group-11-master/SpatialDecision/spatial_decision_dockwidget.py">
+      <file leaf-file-name="utility_functions.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utility_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-7829">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="-10410">
+              <caret line="439" column="11" lean-forward="false" selection-start-line="439" selection-start-column="9" selection-end-line="439" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -181,13 +182,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pb_tool.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="60" column="29" lean-forward="false" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1155">
@@ -589,21 +583,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
+    <entry file="file://$USER_HOME$/Desktop/GEO1005-GeoCharge-Group-11-master/GEO1005-GeoCharge-Group-11-master/SpatialDecision/spatial_decision_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="247">
-          <caret line="77" column="9" lean-forward="false" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
-          <folding>
-            <element signature="e#1155#1164#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="403">
+          <caret line="412" column="10" lean-forward="false" selection-start-line="412" selection-start-column="10" selection-end-line="412" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/GEO1005-GeoCharge-Group-11-master/GEO1005-GeoCharge-Group-11-master/SpatialDecision/spatial_decision_dockwidget.py">
+    <entry file="file://$PROJECT_DIR$/utility_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-7829">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-10410">
+          <caret line="439" column="11" lean-forward="false" selection-start-line="439" selection-start-column="9" selection-end-line="439" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="147">
+          <caret line="167" column="62" lean-forward="false" selection-start-line="167" selection-start-column="62" selection-end-line="167" selection-end-column="62" />
+          <folding>
+            <element signature="e#1155#1164#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

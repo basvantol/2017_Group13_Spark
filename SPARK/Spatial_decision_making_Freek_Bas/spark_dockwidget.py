@@ -163,9 +163,9 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.EditButtonAccount.setEnabled(False)
         self.tabWidget.setCurrentIndex(0)
 
-
+    #
     # def buildNetwork(self):
-    #     self.network_layer = self.getNetwork()
+    #     self.network_layer = self.getNetwork() network_layer
     #     if self.network_layer:
     #         # get the points to be used as origin and destination
     #         # in this case gets the centroid of the selected features
@@ -213,7 +213,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
     #             routes_layer.deleteFeature(id)
     #         routes_layer.commitChanges()
     #
-    # def getNetwork(self):
+    # def getNetwork(self): (skip)
     #     roads_layer = self.getSelectedLayer()
     #     if roads_layer:
     #         # see if there is an obstacles layer to subtract roads from the network

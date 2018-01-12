@@ -231,6 +231,7 @@ class SpatialDecisionDockWidget(QtGui.QDockWidget, FORM_CLASS):
     def cancelCounter(self):
         # triggered if the user clicks the cancel button
         self.timerThread.stop()
+        self.timerThread.stop()
         self.counterProgressBar.setValue(0)
         self.counterProgressBar.setRange(0, 100)
         try:

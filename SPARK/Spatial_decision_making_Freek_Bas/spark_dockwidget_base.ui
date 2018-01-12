@@ -615,7 +615,7 @@
          <string>Edit account</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="ConfirmButtonDestination_2">
+       <widget class="QPushButton" name="ShowRoute">
         <property name="geometry">
          <rect>
           <x>270</x>
@@ -640,7 +640,7 @@
          <string>Show route</string>
         </property>
        </widget>
-       <widget class="QPushButton" name="ConfirmButtonDestination_3">
+       <widget class="QPushButton" name="RateSpot">
         <property name="geometry">
          <rect>
           <x>270</x>
@@ -662,7 +662,7 @@
          </size>
         </property>
         <property name="text">
-         <string>Rate charging spot</string>
+         <string>Rate spot</string>
         </property>
        </widget>
       </widget>

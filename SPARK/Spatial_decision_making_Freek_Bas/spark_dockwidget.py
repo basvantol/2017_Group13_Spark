@@ -94,6 +94,33 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.iface.addProject(unicode(scenario_file))
 
     def ConfirmAccount(self):
+        print(self.HomeAddressInput.text())
+        if self.YesHome.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        if self.NoHome.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        if self.SharedHome.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        self.WorkAddress = self.WorkAddressInput.text()
+        print(self.WorkAddress)
+        if self.YesWork.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        if self.NoWork.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        if self.SharedWork.isChecked() == True:
+            print(True)
+        else:
+            print(False)
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
@@ -107,6 +134,23 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.tabWidget.setCurrentIndex(2)
 
     def ConfirmRating(self):
+        print(self.RatingList.currentItem())
+        if self.checkBoxAccessability.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        if self.checkBoxQuantity.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        if self.checkBoxLocation.isChecked() == True:
+            print(True)
+        else:
+            print(False)
+        if self.checkBoxCondition.isChecked() == True:
+            print(True)
+        else:
+            print(False)
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)

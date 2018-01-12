@@ -43,7 +43,7 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>2</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="TabAccount">
        <attribute name="title">
@@ -565,7 +565,7 @@
          </item>
         </layout>
        </widget>
-       <widget class="QPushButton" name="ConfirmButtonDestination">
+       <widget class="QPushButton" name="SelectDestination">
         <property name="geometry">
          <rect>
           <x>270</x>
@@ -587,14 +587,14 @@
          </size>
         </property>
         <property name="text">
-         <string>Confirm</string>
+         <string>Destination</string>
         </property>
        </widget>
        <widget class="QPushButton" name="EditButtonAccount">
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>130</y>
+          <y>210</y>
           <width>113</width>
           <height>32</height>
          </rect>
@@ -663,6 +663,31 @@
         </property>
         <property name="text">
          <string>Rate spot</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="SelectStart">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>113</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>113</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Starting point</string>
         </property>
        </widget>
       </widget>

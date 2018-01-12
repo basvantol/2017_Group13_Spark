@@ -82,6 +82,8 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.graph = QgsGraph()
         self.tied_points = []
 
+        self.LogList = []
+
     def closeEvent(self, event):
         self.closingPlugin.emit()
         event.accept()
@@ -94,38 +96,26 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.iface.addProject(unicode(scenario_file))
 
     def ConfirmAccount(self):
-        print(self.HomeAddressInput.text())
+        self.LogList.append(self.HomeAddressInput.text())
         if self.YesHome.isChecked() == True:
-            print(True)
-        else:
-            print(False)
+            self.LogList.append("YesHome")
         if self.NoHome.isChecked() == True:
-            print(True)
-        else:
-            print(False)
+            self.LogList.append("NoHome")
         if self.SharedHome.isChecked() == True:
-            print(True)
-        else:
-            print(False)
-        self.WorkAddress = self.WorkAddressInput.text()
-        print(self.WorkAddress)
+            self.LogList.append("SharedHome")
+        self.LogList.append(self.WorkAddressInput.text())
         if self.YesWork.isChecked() == True:
-            print(True)
-        else:
-            print(False)
+            self.LogList.append("YesWork")
         if self.NoWork.isChecked() == True:
-            print(True)
-        else:
-            print(False)
+            self.LogList.append("NoWork")
         if self.SharedWork.isChecked() == True:
-            print(True)
-        else:
-            print(False)
+            self.LogList.append("SharedWork")
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.EditButtonAccount.setEnabled(True)
         self.tabWidget.setCurrentIndex(1)
+        print(self.LogList)
 
     def ConfirmDestination(self):
         self.TabAccount.setEnabled(False)

@@ -22,9 +22,11 @@
 """
 
 import os
+import pandas as pd
 
 from PyQt4 import QtGui, uic
 from PyQt4.QtCore import pyqtSignal
+
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(
     os.path.dirname(__file__), 'spark_dockwidget_base.ui'))
@@ -45,6 +47,8 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.setupUi(self)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(False)
+        self.TabAccount.setEnabled(True)
+        self.EditButtonAccount.setEnabled(False)
 
         self.iface=iface
         self.plugin_dir = os.path.dirname(__file__)
@@ -57,6 +61,13 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.ConfirmButtonAccount.clicked.connect(self.ConfirmAccount)
         self.ConfirmButtonDestination.clicked.connect(self.ConfirmDestination)
         self.ConfirmButtonRating.clicked.connect(self.ConfirmRating)
+        self.EditButtonAccount.clicked.connect(self.EditAccount)
+
+        self.logoLabel.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
+
+        data_mun = pd.read_csv('mun.csv')
+
+
 
 
 
@@ -75,14 +86,25 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
+        self.EditButtonAccount.setEnabled(True)
+        self.tabWidget.setCurrentIndex(1)
 
     def ConfirmDestination(self):
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(True)
+        self.tabWidget.setCurrentIndex(2)
 
     def ConfirmRating(self):
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
+        self.tabWidget.setCurrentIndex(1)
+
+    def EditAccount(self):
+        self.TabAccount.setEnabled(True)
+        self.TabDestination.setEnabled(False)
+        self.TabRating.setEnabled(False)
+        self.EditButtonAccount.setEnabled(False)
+        self.tabWidget.setCurrentIndex(0)
 

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>444</width>
-    <height>843</height>
+    <width>450</width>
+    <height>647</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -17,6 +17,12 @@
    <layout class="QGridLayout" name="gridLayout">
     <item row="0" column="0">
      <widget class="QLabel" name="logoLabel">
+      <property name="minimumSize">
+       <size>
+        <width>422</width>
+        <height>16</height>
+       </size>
+      </property>
       <property name="text">
        <string>TextLabel</string>
       </property>
@@ -24,6 +30,12 @@
     </item>
     <item row="1" column="0">
      <widget class="QTabWidget" name="tabWidget">
+      <property name="minimumSize">
+       <size>
+        <width>422</width>
+        <height>394</height>
+       </size>
+      </property>
       <property name="maximumSize">
        <size>
         <width>422</width>
@@ -31,7 +43,7 @@
        </size>
       </property>
       <property name="currentIndex">
-       <number>1</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="TabAccount">
        <attribute name="title">
@@ -45,6 +57,12 @@
           <width>401</width>
           <height>31</height>
          </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>401</width>
+          <height>31</height>
+         </size>
         </property>
         <property name="maximumSize">
          <size>
@@ -74,6 +92,12 @@
           <height>330</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>361</width>
+          <height>330</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>361</width>
@@ -83,6 +107,12 @@
         <layout class="QGridLayout" name="gridLayout_9">
          <item row="0" column="0" alignment="Qt::AlignLeft">
           <widget class="QLabel" name="label_11">
+           <property name="minimumSize">
+            <size>
+             <width>48</width>
+             <height>22</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>48</width>
@@ -107,6 +137,12 @@
             <layout class="QGridLayout" name="gridLayout_13">
              <item row="0" column="0">
               <widget class="QRadioButton" name="YesHome">
+               <property name="minimumSize">
+                <size>
+                 <width>114</width>
+                 <height>22</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>114</width>
@@ -134,6 +170,12 @@
              </item>
              <item row="0" column="1">
               <widget class="QRadioButton" name="NoHome">
+               <property name="minimumSize">
+                <size>
+                 <width>113</width>
+                 <height>22</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>113</width>
@@ -161,6 +203,12 @@
              </item>
              <item row="0" column="2">
               <widget class="QRadioButton" name="SharedHome">
+               <property name="minimumSize">
+                <size>
+                 <width>114</width>
+                 <height>22</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>114</width>
@@ -190,6 +238,12 @@
            </item>
            <item row="0" column="0" alignment="Qt::AlignLeft">
             <widget class="QLabel" name="label">
+             <property name="minimumSize">
+              <size>
+               <width>110</width>
+               <height>18</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>110</width>
@@ -210,6 +264,12 @@
            </item>
            <item row="1" column="0">
             <widget class="QLineEdit" name="HomeAddressInput">
+             <property name="minimumSize">
+              <size>
+               <width>357</width>
+               <height>28</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>357</width>
@@ -225,6 +285,12 @@
            </item>
            <item row="2" column="0">
             <widget class="QLabel" name="label_14">
+             <property name="minimumSize">
+              <size>
+               <width>357</width>
+               <height>18</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>357</width>
@@ -248,6 +314,12 @@
          </item>
          <item row="1" column="0">
           <widget class="QLineEdit" name="NameInput">
+           <property name="minimumSize">
+            <size>
+             <width>359</width>
+             <height>28</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>359</width>
@@ -265,6 +337,12 @@
           <layout class="QGridLayout" name="gridLayout_8">
            <item row="0" column="0" alignment="Qt::AlignLeft">
             <widget class="QLabel" name="label_10">
+             <property name="minimumSize">
+              <size>
+               <width>108</width>
+               <height>18</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>108</width>
@@ -285,6 +363,12 @@
            </item>
            <item row="1" column="0">
             <widget class="QLineEdit" name="WorkAddressInput">
+             <property name="minimumSize">
+              <size>
+               <width>357</width>
+               <height>28</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>357</width>
@@ -302,6 +386,12 @@
             <layout class="QGridLayout" name="gridLayout_14">
              <item row="0" column="2">
               <widget class="QRadioButton" name="SharedWork">
+               <property name="minimumSize">
+                <size>
+                 <width>114</width>
+                 <height>22</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>114</width>
@@ -324,32 +414,14 @@
                </property>
               </widget>
              </item>
-             <item row="0" column="1">
-              <widget class="QRadioButton" name="NoWork">
-               <property name="maximumSize">
+             <item row="0" column="0">
+              <widget class="QRadioButton" name="YesWork">
+               <property name="minimumSize">
                 <size>
-                 <width>113</width>
+                 <width>114</width>
                  <height>22</height>
                 </size>
                </property>
-               <property name="font">
-                <font>
-                 <pointsize>9</pointsize>
-                </font>
-               </property>
-               <property name="text">
-                <string>No</string>
-               </property>
-               <property name="iconSize">
-                <size>
-                 <width>12</width>
-                 <height>12</height>
-                </size>
-               </property>
-              </widget>
-             </item>
-             <item row="0" column="0">
-              <widget class="QRadioButton" name="YesWork">
                <property name="maximumSize">
                 <size>
                  <width>114</width>
@@ -372,8 +444,44 @@
                </property>
               </widget>
              </item>
+             <item row="0" column="1">
+              <widget class="QRadioButton" name="NoWork">
+               <property name="minimumSize">
+                <size>
+                 <width>113</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>113</width>
+                 <height>22</height>
+                </size>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>9</pointsize>
+                </font>
+               </property>
+               <property name="text">
+                <string>No</string>
+               </property>
+               <property name="iconSize">
+                <size>
+                 <width>12</width>
+                 <height>12</height>
+                </size>
+               </property>
+              </widget>
+             </item>
              <item row="1" column="1">
               <widget class="QPushButton" name="ConfirmButtonAccount">
+               <property name="minimumSize">
+                <size>
+                 <width>113</width>
+                 <height>28</height>
+                </size>
+               </property>
                <property name="maximumSize">
                 <size>
                  <width>113</width>
@@ -389,6 +497,12 @@
            </item>
            <item row="2" column="0">
             <widget class="QLabel" name="label_13">
+             <property name="minimumSize">
+              <size>
+               <width>357</width>
+               <height>18</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>357</width>
@@ -426,6 +540,12 @@
           <height>31</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>401</width>
+          <height>31</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>401</width>
@@ -454,6 +574,12 @@
           <height>53</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>361</width>
+          <height>53</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>361</width>
@@ -463,6 +589,12 @@
         <layout class="QGridLayout" name="gridLayout_10">
          <item row="0" column="0" alignment="Qt::AlignLeft">
           <widget class="QLabel" name="label_12">
+           <property name="minimumSize">
+            <size>
+             <width>211</width>
+             <height>22</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>211</width>
@@ -483,6 +615,12 @@
          </item>
          <item row="1" column="0">
           <widget class="QLineEdit" name="DestinationInput">
+           <property name="minimumSize">
+            <size>
+             <width>359</width>
+             <height>22</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>359</width>
@@ -496,11 +634,17 @@
        <widget class="QPushButton" name="ConfirmButtonDestination">
         <property name="geometry">
          <rect>
-          <x>140</x>
+          <x>270</x>
           <y>130</y>
           <width>113</width>
           <height>32</height>
          </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>113</width>
+          <height>32</height>
+         </size>
         </property>
         <property name="maximumSize">
          <size>
@@ -510,6 +654,31 @@
         </property>
         <property name="text">
          <string>Confirm</string>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="EditButtonAccount">
+        <property name="geometry">
+         <rect>
+          <x>20</x>
+          <y>130</y>
+          <width>113</width>
+          <height>32</height>
+         </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>113</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>113</width>
+          <height>32</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>Edit account</string>
         </property>
        </widget>
       </widget>
@@ -525,6 +694,12 @@
           <width>401</width>
           <height>51</height>
          </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>401</width>
+          <height>51</height>
+         </size>
         </property>
         <property name="maximumSize">
          <size>
@@ -554,6 +729,12 @@
           <height>21</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>361</width>
+          <height>21</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>361</width>
@@ -565,6 +746,12 @@
           <layout class="QGridLayout" name="gridLayout_12">
            <item row="0" column="2">
             <widget class="QLabel" name="label_18">
+             <property name="minimumSize">
+              <size>
+               <width>54</width>
+               <height>17</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>54</width>
@@ -581,6 +768,12 @@
            </item>
            <item row="0" column="1">
             <widget class="QLabel" name="label_17">
+             <property name="minimumSize">
+              <size>
+               <width>53</width>
+               <height>17</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>53</width>
@@ -597,6 +790,12 @@
            </item>
            <item row="0" column="0">
             <widget class="QLabel" name="label_16">
+             <property name="minimumSize">
+              <size>
+               <width>54</width>
+               <height>17</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>54</width>
@@ -613,6 +812,12 @@
            </item>
            <item row="0" column="4">
             <widget class="QLabel" name="label_20">
+             <property name="minimumSize">
+              <size>
+               <width>53</width>
+               <height>17</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>53</width>
@@ -629,6 +834,12 @@
            </item>
            <item row="0" column="3">
             <widget class="QLabel" name="label_19">
+             <property name="minimumSize">
+              <size>
+               <width>54</width>
+               <height>17</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>54</width>
@@ -645,6 +856,12 @@
            </item>
            <item row="0" column="5">
             <widget class="QLabel" name="label_21">
+             <property name="minimumSize">
+              <size>
+               <width>54</width>
+               <height>17</height>
+              </size>
+             </property>
              <property name="maximumSize">
               <size>
                <width>54</width>
@@ -672,6 +889,12 @@
           <height>22</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>325</width>
+          <height>22</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>325</width>
@@ -693,6 +916,12 @@
           <width>357</width>
           <height>17</height>
          </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>357</width>
+          <height>17</height>
+         </size>
         </property>
         <property name="maximumSize">
          <size>
@@ -723,6 +952,12 @@
           <height>17</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>357</width>
+          <height>17</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>357</width>
@@ -751,6 +986,12 @@
           <height>61</height>
          </rect>
         </property>
+        <property name="minimumSize">
+         <size>
+          <width>271</width>
+          <height>61</height>
+         </size>
+        </property>
         <property name="maximumSize">
          <size>
           <width>271</width>
@@ -760,6 +1001,12 @@
         <layout class="QGridLayout" name="gridLayout_15">
          <item row="0" column="1">
           <widget class="QCheckBox" name="checkBoxQuantity">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>131</width>
@@ -773,6 +1020,12 @@
          </item>
          <item row="0" column="0">
           <widget class="QCheckBox" name="checkBoxAccessability">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>131</width>
@@ -786,6 +1039,12 @@
          </item>
          <item row="1" column="0">
           <widget class="QCheckBox" name="checkBoxLocation">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>131</width>
@@ -799,6 +1058,12 @@
          </item>
          <item row="1" column="1">
           <widget class="QCheckBox" name="checkBoxCondition">
+           <property name="minimumSize">
+            <size>
+             <width>131</width>
+             <height>20</height>
+            </size>
+           </property>
            <property name="maximumSize">
             <size>
              <width>131</width>
@@ -820,6 +1085,12 @@
           <width>113</width>
           <height>32</height>
          </rect>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>113</width>
+          <height>32</height>
+         </size>
         </property>
         <property name="maximumSize">
          <size>

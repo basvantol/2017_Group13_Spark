@@ -20,6 +20,20 @@
  *                                                                         *
  ***************************************************************************/
 """
+import os
+
+from PyQt4 import QtGui, uic
+from PyQt4.QtCore import pyqtSignal
+
+from PyQt4 import QtGui, QtCore
+from qgis.core import *
+from qgis.networkanalysis import *
+
+from pyspatialite import dbapi2 as sqlite
+import psycopg2 as pgsql
+import numpy as np
+import math
+import os.path
 
 import os
 
@@ -29,6 +43,12 @@ from PyQt4.QtCore import pyqtSignal
 from PyQt4 import QtGui, QtCore
 from qgis.core import *
 from qgis.networkanalysis import *
+
+from PyQt4 import QtGui, QtCore, uic
+from qgis.core import *
+from qgis.networkanalysis import *
+from qgis.gui import *
+import processing
 
 from pyspatialite import dbapi2 as sqlite
 import psycopg2 as pgsql
@@ -63,18 +83,32 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.EditButtonAccount.setEnabled(False)
 
         self.iface=iface
+        self.canvas = self.iface.mapCanvas()
         self.plugin_dir = os.path.dirname(__file__)
         self.openScenario()
+        self.startingPoint = 0
+        self.destinationPoint = 0
 
         self.layers_dic = self.getLayers()
+
+        #clicking
+        self.emitStartPoint = QgsMapToolEmitPoint(self.canvas)
+        self.SelectStart.clicked.connect(self.enterStartPoi)
+        self.emitStartPoint.canvasClicked.connect(self.getStartPoint)
+
+        self.emitDestinationPoint = QgsMapToolEmitPoint(self.canvas)
+        self.SelectDestination.clicked.connect(self.enterDestinationPoi)
+        self.emitDestinationPoint.canvasClicked.connect(self.getDestinationPoint)
 
 
 
         #input
         self.ConfirmButtonAccount.clicked.connect(self.ConfirmAccount)
-        self.RateSpot.clicked.connect(self.ConfirmDestination)
+        self.RateSpot.clicked.connect(self.goToRate)
         self.ConfirmButtonRating.clicked.connect(self.ConfirmRating)
         self.EditButtonAccount.clicked.connect(self.EditAccount)
+
+        self.ShowRoute.clicked.connect(self.calculateRoute)
 
         self.logoLabel.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
 
@@ -129,7 +163,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.tabWidget.setCurrentIndex(1)
         print(self.LogList)
 
-    def ConfirmDestination(self):
+    def goToRate(self):
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(True)
@@ -158,6 +192,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.tabWidget.setCurrentIndex(1)
+        print(self.startingPoint)
 
     def EditAccount(self):
         self.TabAccount.setEnabled(True)
@@ -166,10 +201,40 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.EditButtonAccount.setEnabled(False)
         self.tabWidget.setCurrentIndex(0)
 
+    def enterStartPoi(self):
+        # remember currently selected tool
+        self.userTool = self.canvas.mapTool()
+        # activate coordinate capture tool
+        self.canvas.setMapTool(self.emitStartPoint)
+
+    def getStartPoint(self, mapPoint, mouseButton):
+        # change tool so you don't get more than one POI
+        self.canvas.unsetMapTool(self.emitStartPoint)
+        self.canvas.setMapTool(self.userTool)
+        #Get the click
+        if mapPoint:
+            self.startingPoint = mapPoint
+            # here do something with the point
+
+    def enterDestinationPoi(self):
+        # remember currently selected tool
+        self.userTool = self.canvas.mapTool()
+        # activate coordinate capture tool
+        self.canvas.setMapTool(self.emitDestinationPoint)
+
+    def getDestinationPoint(self, mapPoint, mouseButton):
+        # change tool so you don't get more than one POI
+        self.canvas.unsetMapTool(self.emitDestinationPoint)
+        self.canvas.setMapTool(self.userTool)
+        #Get the click
+        if mapPoint:
+            self.destinationPoint = mapPoint
+            # here do something with the point
+
     def calculateRoute(self):
         self.deleteRoutes()
         self.network_layer = self.layers_dic['roads']
-        source_points = (self.start_point, self.end_point)
+        source_points = (self.startingPoint, self.destinationPoint)
         self.graph, self.tied_points = uf.makeUndirectedGraph(self.network_layer, source_points)
         path = uf.calculateRouteDijkstra(self.graph, self.tied_points, 0, 1)
         routes_layer = self.layers_dic['route']
@@ -184,6 +249,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
             for id in ids:
                 routes_layer.deleteFeature(id)
             routes_layer.commitChanges()
+
 
 
 

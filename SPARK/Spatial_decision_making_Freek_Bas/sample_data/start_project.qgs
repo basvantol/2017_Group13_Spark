@@ -28,10 +28,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>92608.49089253891725093</xmin>
-      <ymin>435989.7162544812890701</ymin>
-      <xmax>95911.37794061144813895</xmax>
-      <ymax>439089.36051902751205489</ymax>
+      <xmin>91562.40920425494550727</xmin>
+      <ymin>434897.31360583053901792</ymin>
+      <xmax>94865.29625232747639529</xmax>
+      <ymax>437996.95787037676200271</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -333,6 +333,7 @@
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -2482,6 +2483,9 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="Condition">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
+        <edittype widgetv2type="TextEdit" name="HomeAdd">
+          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
+        </edittype>
       </edittypes>
       <renderer-v2 forceraster="0" symbollevels="0" type="singleSymbol" enableorderby="0">
         <symbols>
@@ -2683,6 +2687,7 @@ def my_form_open(dialog, layer, feature):
       <SingleCategoryDiagramRenderer diagramType="Histogram" sizeLegend="0" attributeLegend="1">
         <DiagramCategory penColor="#000000" labelPlacementMethod="XHeight" penWidth="0" diagramOrientation="Up" sizeScale="0,0,0,0,0,0" minimumSize="0" barWidth="5" penAlpha="255" maxScaleDenominator="1e+08" backgroundColor="#ffffff" transparency="0" width="15" scaleDependency="Area" backgroundAlpha="255" angleOffset="1440" scaleBasedVisibility="0" enabled="0" height="15" lineSizeScale="0,0,0,0,0,0" sizeType="MM" lineSizeType="MM" minScaleDenominator="inf">
           <fontProperties description=".SF NS Text,13,-1,5,50,0,0,0,0,0" style=""/>
+          <attribute field="" color="#000000" label=""/>
         </DiagramCategory>
         <symbol alpha="1" clip_to_extent="1" type="marker" name="sizeSymbol">
           <layer pass="0" class="SimpleMarker" locked="0">
@@ -2716,6 +2721,7 @@ def my_form_open(dialog, layer, feature):
         <alias field="Quantity" index="3" name=""/>
         <alias field="Location" index="4" name=""/>
         <alias field="Condition" index="5" name=""/>
+        <alias field="HomeAdd" index="6" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -2729,6 +2735,7 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="Quantity"/>
           <column width="-1" hidden="0" type="field" name="Location"/>
           <column width="-1" hidden="0" type="field" name="Condition"/>
+          <column width="-1" hidden="0" type="field" name="HomeAdd"/>
         </columns>
       </attributetableconfig>
       <editform>.</editform>
@@ -2766,6 +2773,7 @@ def my_form_open(dialog, layer, feature):
         <default field="Quantity" expression=""/>
         <default field="Location" expression=""/>
         <default field="Condition" expression=""/>
+        <default field="HomeAdd" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "Spot", '&lt;NULL>' )</previewExpression>
     </maplayer>

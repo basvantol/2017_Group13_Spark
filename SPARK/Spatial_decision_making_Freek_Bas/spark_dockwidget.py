@@ -117,7 +117,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.tied_points = []
 
         self.LogList = []
-        self.RatingForm = []
+        self.RatingList = []
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
@@ -174,29 +174,41 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
 
 
     def ConfirmRating(self):
-        self.RatingForm = []
-        self.RatingForm.append(self.RatingList.currentItem())
+        self.RatingList = []
+
+        if self.ratingbutton1.isChecked() == True:
+            self.RatingList.append(1)
+        if self.ratingbutton2.isChecked() == True:
+            self.RatingList.append(2)
+        if self.ratingbutton3.isChecked() == True:
+            self.RatingList.append(3)
+        if self.ratingbutton4.isChecked() == True:
+            self.RatingList.append(4)
+        if self.ratingbutton5.isChecked() == True:
+            self.RatingList.append(5)
+
         if self.checkBoxAccessability.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
         if self.checkBoxQuantity.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
         if self.checkBoxLocation.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
         if self.checkBoxCondition.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
+        self.RatingList.append(self.HomeAddressInput.text())
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.tabWidget.setCurrentIndex(1)
-        print(self.RatingForm)
+        print(self.RatingList)
 
     def EditAccount(self):
         self.TabAccount.setEnabled(True)

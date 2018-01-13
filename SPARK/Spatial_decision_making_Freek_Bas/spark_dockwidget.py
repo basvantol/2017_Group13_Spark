@@ -147,24 +147,26 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.LogList = []
         self.LogList.append(self.HomeAddressInput.text())
         if self.YesHome.isChecked() == True:
-            self.LogList.append("YesHome")
+            self.LogList.append("Yes")
         if self.NoHome.isChecked() == True:
-            self.LogList.append("NoHome")
+            self.LogList.append("No")
         if self.SharedHome.isChecked() == True:
-            self.LogList.append("SharedHome")
+            self.LogList.append("Shared")
         self.LogList.append(self.WorkAddressInput.text())
         if self.YesWork.isChecked() == True:
-            self.LogList.append("YesWork")
+            self.LogList.append("Yes")
         if self.NoWork.isChecked() == True:
-            self.LogList.append("NoWork")
+            self.LogList.append("No")
         if self.SharedWork.isChecked() == True:
-            self.LogList.append("SharedWork")
+            self.LogList.append("Shared")
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.EditButtonAccount.setEnabled(True)
         self.tabWidget.setCurrentIndex(1)
         print(self.LogList)
+
+        uf.insertTempFeaturesGeom(uf.getLegendLayerByName(self.iface, "account layer"), QgsPoint[0,0], self.LogList)
 
     def goToRate(self):
         self.TabAccount.setEnabled(False)

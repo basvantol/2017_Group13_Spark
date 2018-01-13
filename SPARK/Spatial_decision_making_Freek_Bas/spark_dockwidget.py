@@ -7,7 +7,7 @@
                              -------------------
         begin                : 2017-12-05
         git sha              : $Format:%H$
-        copyright            : (C) 2017 by Bas van Tol Test2
+        copyright            : (C) 2017 by Bas van Tol & Freek Akkermans
         email                : bvantol3@gmail.com
  ***************************************************************************/
 
@@ -166,7 +166,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.tabWidget.setCurrentIndex(1)
         print(self.LogList)
 
-        uf.insertTempFeaturesGeom(uf.getLegendLayerByName(self.iface, "account layer"), [QgsPoint[0,0]], self.LogList)
+        uf.insertTempFeaturesGeom(uf.getLegendLayerByName(self.iface, "account layer"), [QgsPoint[0,0]], [self.LogList])
 
     def goToRate(self):
         self.TabAccount.setEnabled(False)

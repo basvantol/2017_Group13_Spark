@@ -166,3 +166,26 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.EditButtonAccount.setEnabled(False)
         self.tabWidget.setCurrentIndex(0)
 
+    def calculateRoute(self):
+        self.deleteRoutes()
+        self.network_layer = self.layers_dic['roads']
+        source_points = (self.start_point, self.end_point)
+        self.graph, self.tied_points = uf.makeUndirectedGraph(self.network_layer, source_points)
+        path = uf.calculateRouteDijkstra(self.graph, self.tied_points, 0, 1)
+        routes_layer = self.layers_dic['route']
+        uf.insertTempFeatures(routes_layer, [path], [])
+        self.refreshCanvas(routes_layer)
+
+    def deleteRoutes(self):
+        routes_layer = uf.getLegendLayerByName(self.iface, "routing layer")
+        if routes_layer:
+            ids = uf.getAllFeatureIds(routes_layer)
+            routes_layer.startEditing()
+            for id in ids:
+                routes_layer.deleteFeature(id)
+            routes_layer.commitChanges()
+
+
+
+
+

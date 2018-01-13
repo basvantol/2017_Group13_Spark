@@ -28,10 +28,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>90926.7420546141511295</xmin>
-      <ymin>431706.91509383387165144</ymin>
-      <xmax>104138.29024690427468158</xmax>
-      <ymax>444105.4921520187635906</ymax>
+      <xmin>91522.16543868517328519</xmin>
+      <ymin>434591.09628145431634039</ymin>
+      <xmax>98127.93953483023506124</xmax>
+      <ymax>440790.38481054676230997</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -1885,23 +1885,27 @@ def my_form_open(dialog, layer, feature):
       </edittypes>
       <renderer-v2 attr="FRACTION" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
-          <category render="true" symbol="0" value="0" label="0"/>
-          <category render="true" symbol="1" value="0.08333" label="0.08333"/>
-          <category render="true" symbol="2" value="0.13043" label="0.13043"/>
-          <category render="true" symbol="3" value="0.16667" label="0.16667"/>
-          <category render="true" symbol="4" value="0.2" label="0.2"/>
-          <category render="true" symbol="5" value="0.25" label="0.25"/>
-          <category render="true" symbol="6" value="0.33333" label="0.33333"/>
-          <category render="true" symbol="7" value="0.4" label="0.4"/>
-          <category render="true" symbol="8" value="0.5" label="0.5"/>
-          <category render="true" symbol="9" value="0.58333" label="0.58333"/>
-          <category render="true" symbol="10" value="0.66667" label="0.66667"/>
-          <category render="true" symbol="11" value="0.71429" label="0.71429"/>
-          <category render="true" symbol="12" value="0.75" label="0.75"/>
-          <category render="true" symbol="13" value="0.8" label="0.8"/>
-          <category render="true" symbol="14" value="0.83333" label="0.83333"/>
-          <category render="true" symbol="15" value="1" label="1"/>
-          <category render="true" symbol="16" value="" label=""/>
+          <category render="true" symbol="0" value="0.0833333333333333" label="0.0833333333333333"/>
+          <category render="true" symbol="1" value="0.166666666666667" label="0.166666666666667"/>
+          <category render="true" symbol="2" value="0.222222222222222" label="0.222222222222222"/>
+          <category render="true" symbol="3" value="0.25" label="0.25"/>
+          <category render="true" symbol="4" value="0.333333333333333" label="0.333333333333333"/>
+          <category render="true" symbol="5" value="0.35" label="0.35"/>
+          <category render="true" symbol="6" value="0.416666666666667" label="0.416666666666667"/>
+          <category render="true" symbol="7" value="0.5" label="0.5"/>
+          <category render="true" symbol="8" value="0.555555555555556" label="0.555555555555556"/>
+          <category render="true" symbol="9" value="0.571428571428571" label="0.571428571428571"/>
+          <category render="true" symbol="10" value="0.583333333333333" label="0.583333333333333"/>
+          <category render="true" symbol="11" value="0.666666666666667" label="0.666666666666667"/>
+          <category render="true" symbol="12" value="0.6875" label="0.6875"/>
+          <category render="true" symbol="13" value="0.761904761904762" label="0.761904761904762"/>
+          <category render="true" symbol="14" value="0.8" label="0.8"/>
+          <category render="true" symbol="15" value="0.875" label="0.875"/>
+          <category render="true" symbol="16" value="0.904761904761905" label="0.904761904761905"/>
+          <category render="true" symbol="17" value="0.916666666666667" label="0.916666666666667"/>
+          <category render="true" symbol="18" value="0.956521739130435" label="0.956521739130435"/>
+          <category render="true" symbol="19" value="1" label="1"/>
+          <category render="true" symbol="20" value="" label=""/>
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -2007,7 +2011,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="13">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="26,150,65,255"/>
+              <prop k="color" v="69,217,49,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_parking_car.svg"/>
               <prop k="offset" v="0,0"/>
@@ -2027,7 +2031,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="14">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="26,150,65,255"/>
+              <prop k="color" v="69,217,49,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_parking_car.svg"/>
               <prop k="offset" v="0,0"/>
@@ -2047,7 +2051,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="15">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="26,150,65,255"/>
+              <prop k="color" v="69,217,49,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_parking_car.svg"/>
               <prop k="offset" v="0,0"/>
@@ -2084,10 +2088,90 @@ def my_form_open(dialog, layer, feature):
               <prop k="vertical_anchor_point" v="1"/>
             </layer>
           </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="17">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="26,150,65,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="18">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="26,150,65,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="19">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="26,150,65,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="253,174,97,255"/>
+              <prop k="color" v="215,25,28,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="20">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="26,150,65,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_parking_car.svg"/>
               <prop k="offset" v="0,0"/>
@@ -2187,7 +2271,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="7">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="69,217,49,255"/>
+              <prop k="color" v="253,174,97,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_parking_car.svg"/>
               <prop k="offset" v="0,0"/>
@@ -2207,7 +2291,7 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="8">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
-              <prop k="color" v="69,217,49,255"/>
+              <prop k="color" v="253,174,97,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_parking_car.svg"/>
               <prop k="offset" v="0,0"/>
@@ -2305,7 +2389,7 @@ def my_form_open(dialog, layer, feature):
         <property key="labeling/distMapUnitScale" value="0,0,0,0,0,0"/>
         <property key="labeling/drawLabels" value="true"/>
         <property key="labeling/enabled" value="true"/>
-        <property key="labeling/fieldName" value="AVAILABLE"/>
+        <property key="labeling/fieldName" value="TOTAL"/>
         <property key="labeling/fitInPolygonOnly" value="false"/>
         <property key="labeling/fontCapitals" value="0"/>
         <property key="labeling/fontFamily" value="MS Shell Dlg 2"/>

@@ -108,6 +108,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.ConfirmButtonRating.clicked.connect(self.ConfirmRating)
         self.EditButtonAccount.clicked.connect(self.EditAccount)
 
+        self.ShowRoute.clicked.connect(self.buildNetwork)
         self.ShowRoute.clicked.connect(self.calculateRoute)
 
         self.logoLabel.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
@@ -233,11 +234,11 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
 
     def calculateRoute(self):
         self.deleteRoutes()
-        self.network_layer = self.layers_dic['roads']
+        self.network_layer = uf.getLegendLayerByName(self.iface, "roads")
         source_points = (self.startingPoint, self.destinationPoint)
         self.graph, self.tied_points = uf.makeUndirectedGraph(self.network_layer, source_points)
         path = uf.calculateRouteDijkstra(self.graph, self.tied_points, 0, 1)
-        routes_layer = self.layers_dic['route']
+        routes_layer = uf.getLegendLayerByName(self.iface, "routing layer")
         uf.insertTempFeatures(routes_layer, [path], [])
         self.refreshCanvas(routes_layer)
 
@@ -250,7 +251,38 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
                 routes_layer.deleteFeature(id)
             routes_layer.commitChanges()
 
+    def getNetwork(self):
+        roads_layer = self.layers_dic['roads']
+        if roads_layer:
+            # see if there is an obstacles layer to subtract roads from the network
+            obstacles_layer = uf.getLegendLayerByName(self.iface, "Obstacles")
+            if obstacles_layer:
+                # retrieve roads outside obstacles (inside = False)
+                features = uf.getFeaturesByIntersection(roads_layer, obstacles_layer, False)
+                # add these roads to a new temporary layer
+                road_network = uf.createTempLayer('Temp_Network','LINESTRING',roads_layer.crs().postgisSrid(),[],[])
+                road_network.dataProvider().addFeatures(features)
+            else:
+                road_network = roads_layer
+            return road_network
+        else:
+            return
 
+    def buildNetwork(self):
+        self.network_layer = self.getNetwork()
+        if self.network_layer:
+            # get the points to be used as origin and destination
+            # in this case gets the centroid of the selected features
+            selected_sources = uf.getLegendLayerByName(self.iface, "routing layer").selectedFeatures()
+            source_points = [feature.geometry().centroid().asPoint() for feature in selected_sources]
+            # build the graph including these points
+            if len(source_points) > 1:
+                self.graph, self.tied_points = uf.makeUndirectedGraph(self.network_layer, source_points)
+                # the tied points are the new source_points on the graph
+                if self.graph and self.tied_points:
+                    text = "network is built for %s points" % len(self.tied_points)
+                    self.insertReport(text)
+        return
 
 
 

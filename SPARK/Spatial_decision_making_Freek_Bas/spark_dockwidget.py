@@ -250,7 +250,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
     def calculateRoute(self):
         self.deleteRoutes()
         self.network_layer = uf.getLegendLayerByName(self.iface, "roads")
-        source_points = (self.startingPoint, self.destinationPoint)
+        source_points = [self.startingPoint, self.destinationPoint]
         self.graph, self.tied_points = uf.makeUndirectedGraph(self.network_layer, source_points)
         path = uf.calculateRouteDijkstra(self.graph, self.tied_points, 0, 1)
         routes_layer = uf.getLegendLayerByName(self.iface, "routing layer")
@@ -299,6 +299,12 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
                     self.insertReport(text)
         return
 
+    # after adding features to layers needs a refresh (sometimes)
+    def refreshCanvas(self, layer):
+        if self.canvas.isCachingEnabled():
+            layer.setCacheImage(None)
+        else:
+            self.canvas.refresh()
 
 
 

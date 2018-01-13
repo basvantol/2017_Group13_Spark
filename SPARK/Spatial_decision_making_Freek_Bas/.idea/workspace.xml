@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41c0edf7-8e8b-4260-bffb-c40e25be5746" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_dockwidget.py" afterPath="$PROJECT_DIR$/spark_dockwidget.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +16,8 @@
       <file leaf-file-name="spark_dockwidget.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="261">
-              <caret line="240" column="75" lean-forward="false" selection-start-line="240" selection-start-column="75" selection-end-line="240" selection-end-column="75" />
+            <state relative-caret-position="324">
+              <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
               <folding>
                 <element signature="e#1154#1163#0" expanded="true" />
               </folding>
@@ -58,6 +57,7 @@
       <find>emit</find>
       <find>Qgs</find>
       <find>QgsLineVectorLayerDirector</find>
+      <find>s</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -603,8 +603,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="240" column="75" lean-forward="false" selection-start-line="240" selection-start-column="75" selection-end-line="240" selection-end-column="75" />
+        <state relative-caret-position="324">
+          <caret line="111" column="22" lean-forward="false" selection-start-line="111" selection-start-column="22" selection-end-line="111" selection-end-column="22" />
           <folding>
             <element signature="e#1154#1163#0" expanded="true" />
           </folding>

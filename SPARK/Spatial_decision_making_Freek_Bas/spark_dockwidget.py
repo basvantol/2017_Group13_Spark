@@ -117,6 +117,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.tied_points = []
 
         self.LogList = []
+        self.RatingForm = []
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
@@ -143,6 +144,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         return layers_dict
 
     def ConfirmAccount(self):
+        self.LogList = []
         self.LogList.append(self.HomeAddressInput.text())
         if self.YesHome.isChecked() == True:
             self.LogList.append("YesHome")
@@ -172,28 +174,29 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
 
 
     def ConfirmRating(self):
-        print(self.RatingList.currentItem())
+        self.RatingForm = []
+        self.RatingForm.append(self.RatingList.currentItem())
         if self.checkBoxAccessability.isChecked() == True:
-            print(True)
+            self.RatingForm.append(True)
         else:
-            print(False)
+            self.RatingForm.append(False)
         if self.checkBoxQuantity.isChecked() == True:
-            print(True)
+            self.RatingForm.append(True)
         else:
-            print(False)
+            self.RatingForm.append(False)
         if self.checkBoxLocation.isChecked() == True:
-            print(True)
+            self.RatingForm.append(True)
         else:
-            print(False)
+            self.RatingForm.append(False)
         if self.checkBoxCondition.isChecked() == True:
-            print(True)
+            self.RatingForm.append(True)
         else:
-            print(False)
+            self.RatingForm.append(False)
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.tabWidget.setCurrentIndex(1)
-        print(self.startingPoint)
+        print(self.RatingForm)
 
     def EditAccount(self):
         self.TabAccount.setEnabled(True)

@@ -5,22 +5,22 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="routing_layer20180112222154645" source="C:/Users/bvant/.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/routing layer.shp" name="routing layer">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="routing_layer20180112222154645" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/routing layer.shp" name="routing layer">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="parking_clipped20180112213450999" source="C:/Users/bvant/.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/parking clipped.shp" name="parking">
+    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="parking_clipped20180112213450999" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/parking clipped.shp" name="parking">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="buurt_rotterdam20180112104442057" source="C:/Users/bvant/.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/buurt_rotterdam.shp" name="base map">
+    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="buurt_rotterdam20180112104442057" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/buurt_rotterdam.shp" name="base map">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="clipped_wegen20180112104438497" source="C:/Users/bvant/.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/clipped wegen.shp" name="roads">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="clipped_wegen20180112104438497" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/clipped wegen.shp" name="roads">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="rating_layer20180112222420676" source="C:/Users/bvant/.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/rating layer.shp" name="rating layer">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="rating_layer20180112222420676" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/rating layer.shp" name="rating layer">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="account_layer20180112222403788" source="C:/Users/bvant/.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/account layer.shp" name="account layer">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="account_layer20180112222403788" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/account layer.shp" name="account layer">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -95,7 +95,7 @@
   <projectlayers>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>account_layer20180112222403788</id>
-      <datasource>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/account layer.shp</datasource>
+      <datasource>./account layer.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -362,7 +362,7 @@
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
+      <annotationform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
       <aliases>
         <alias field="HomeAdd" index="0" name=""/>
         <alias field="HomeEV" index="1" name=""/>
@@ -382,10 +382,10 @@
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
+      <editform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
+      <editforminitfilepath>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -427,7 +427,7 @@ def my_form_open(dialog, layer, feature):
         <ymax>445396.52977774647297338</ymax>
       </extent>
       <id>buurt_rotterdam20180112104442057</id>
-      <datasource>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/buurt_rotterdam.shp</datasource>
+      <datasource>./buurt_rotterdam.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1053,7 +1053,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
+      <annotationform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
       <aliases>
         <alias field="BU_CODE" index="0" name=""/>
         <alias field="BU_NAAM" index="1" name=""/>
@@ -1318,10 +1318,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
+      <editform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
+      <editforminitfilepath>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -1479,7 +1479,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>clipped_wegen20180112104438497</id>
-      <datasource>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/clipped wegen.shp</datasource>
+      <datasource>./clipped wegen.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -1863,7 +1863,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
+      <annotationform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
       <aliases>
         <alias field="sid" index="0" name=""/>
         <alias field="wvk_id" index="1" name=""/>
@@ -1964,10 +1964,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
+      <editform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
+      <editforminitfilepath>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -2043,7 +2043,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>parking_clipped20180112213450999</id>
-      <datasource>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/parking clipped.shp</datasource>
+      <datasource>./parking clipped.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2373,7 +2373,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
+      <annotationform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
       <aliases>
         <alias field="KEY" index="0" name=""/>
         <alias field="LATITUDE" index="1" name=""/>
@@ -2402,10 +2402,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="FRACTION"/>
         </columns>
       </attributetableconfig>
-      <editform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
+      <editform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
+      <editforminitfilepath>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -2445,7 +2445,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>rating_layer20180112222420676</id>
-      <datasource>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/rating layer.shp</datasource>
+      <datasource>./rating layer.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -2715,7 +2715,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="0" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
+      <annotationform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
       <aliases>
         <alias field="Rating" index="0" name=""/>
         <alias field="Access" index="1" name=""/>
@@ -2739,10 +2739,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="0" type="field" name="HomeAdd"/>
         </columns>
       </attributetableconfig>
-      <editform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
+      <editform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
+      <editforminitfilepath>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is
@@ -2779,7 +2779,7 @@ def my_form_open(dialog, layer, feature):
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="1" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Line" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
       <id>routing_layer20180112222154645</id>
-      <datasource>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data/routing layer.shp</datasource>
+      <datasource>./routing layer.shp</datasource>
       <keywordList>
         <value></value>
       </keywordList>
@@ -3031,7 +3031,7 @@ def my_form_open(dialog, layer, feature):
         </symbol>
       </SingleCategoryDiagramRenderer>
       <DiagramLayerSettings yPosColumn="-1" showColumn="-1" linePlacementFlags="10" placement="2" dist="0" xPosColumn="-1" priority="0" obstacle="0" zIndex="0" showAll="1"/>
-      <annotationform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
+      <annotationform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</annotationform>
       <aliases>
         <alias field="id" index="0" name=""/>
       </aliases>
@@ -3044,10 +3044,10 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
         </columns>
       </attributetableconfig>
-      <editform>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
+      <editform>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
       <editforminit/>
       <editforminitcodesource>0</editforminitcodesource>
-      <editforminitfilepath>../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
+      <editforminitfilepath>../../../../../../../.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editforminitfilepath>
       <editforminitcode><![CDATA[# -*- coding: utf-8 -*-
 """
 QGIS forms can have a Python function that is called when the form is

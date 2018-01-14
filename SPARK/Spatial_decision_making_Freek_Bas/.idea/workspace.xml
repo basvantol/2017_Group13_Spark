@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41c0edf7-8e8b-4260-bffb-c40e25be5746" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.dbf" afterPath="$PROJECT_DIR$/sample_data/routing layer.dbf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.shp" afterPath="$PROJECT_DIR$/sample_data/routing layer.shp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.shx" afterPath="$PROJECT_DIR$/sample_data/routing layer.shx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.dbf" afterPath="$PROJECT_DIR$/sample_data/account layer.dbf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.shp" afterPath="$PROJECT_DIR$/sample_data/account layer.shp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.shx" afterPath="$PROJECT_DIR$/sample_data/account layer.shx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/start_project.qgs" afterPath="$PROJECT_DIR$/sample_data/start_project.qgs" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_dockwidget.py" afterPath="$PROJECT_DIR$/spark_dockwidget.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -20,8 +20,8 @@
       <file leaf-file-name="spark_dockwidget.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="393" column="19" lean-forward="true" selection-start-line="393" selection-start-column="19" selection-end-line="393" selection-end-column="19" />
+            <state relative-caret-position="243">
+              <caret line="164" column="9" lean-forward="false" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
               <folding>
                 <element signature="e#1166#1175#0" expanded="true" />
               </folding>
@@ -53,7 +53,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>logo</find>
       <find>build</find>
       <find>conf</find>
       <find>if</find>
@@ -83,6 +82,7 @@
       <find>enableBut</find>
       <find>self.confirmbuttonrat</find>
       <find>get</find>
+      <find>.text</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -635,8 +635,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="393" column="19" lean-forward="true" selection-start-line="393" selection-start-column="19" selection-end-line="393" selection-end-column="19" />
+        <state relative-caret-position="243">
+          <caret line="164" column="9" lean-forward="false" selection-start-line="164" selection-start-column="9" selection-end-line="164" selection-end-column="9" />
           <folding>
             <element signature="e#1166#1175#0" expanded="true" />
           </folding>

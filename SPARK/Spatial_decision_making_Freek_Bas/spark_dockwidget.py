@@ -162,7 +162,8 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         return layers_dict
 
     def enableLogin(self):
-        if self.LoginNameInput.isModified() == True:
+        #if self.LoginNameInput.isModified() == True:
+        if self.checkLogin() == True:
             self.LoginButton.setEnabled(True)
         else:
             self.LoginButton.setEnabled(False)
@@ -199,7 +200,6 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.RateSpot.setEnabled(False)
         self.RegisterButton.setEnabled(False)
         self.LoginButton.setEnabled(False)
-        checkLogin()
 
 
     def RegisterAccount(self):
@@ -278,7 +278,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
             self.RatingList.append(True)
         else:
             self.RatingList.append(False)
-        self.RatingList.append(self.NameInput.text() + self.LoginNameInput.text())
+        self.RatingList.append(self.NameInpu.textt() + self.LoginNameInput.text())
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
@@ -391,6 +391,11 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         else:
             self.canvas.refresh()
 
-    def checkLogin():
-        print(uf.getFieldValues(uf.getLegendLayerByName(self.iface, "account layer"), 'Name', null=True, selection=False))
+    def checkLogin(self):
+        names = uf.getFieldValues(uf.getLegendLayerByName(self.iface, "account layer"), 'Name', null=True, selection=False)[0]
+        nameField = self.LoginNameInput.text()
+        print(names)
+        if nameField in names:
+            return True
+
 

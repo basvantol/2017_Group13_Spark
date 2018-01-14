@@ -186,11 +186,6 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         else:
             self.ConfirmButtonRating.setEnabled(False)
 
-
-
-
-
-
     def LoginAccount(self):
         self.TabLogin.setEnabled(False)
         self.TabAccount.setEnabled(False)
@@ -204,6 +199,8 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.RateSpot.setEnabled(False)
         self.RegisterButton.setEnabled(False)
         self.LoginButton.setEnabled(False)
+        checkLogin()
+
 
     def RegisterAccount(self):
         self.TabLogin.setEnabled(False)
@@ -394,5 +391,6 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         else:
             self.canvas.refresh()
 
-
+    def checkLogin():
+        print(uf.getFieldValues(uf.getLegendLayerByName(self.iface, "account layer"), 'Name', null=True, selection=False))
 

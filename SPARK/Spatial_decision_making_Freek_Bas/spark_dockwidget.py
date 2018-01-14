@@ -231,7 +231,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.canvas.setMapTool(self.userTool)
         #Get the click
         if mapPoint:
-            self.startingPoint = mapPoint
+            self.startingPoint = QgsPoint(mapPoint.x(), mapPoint.y())
             # here do something with the point
 
     def enterDestinationPoi(self):
@@ -246,7 +246,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.canvas.setMapTool(self.userTool)
         #Get the click
         if mapPoint:
-            self.destinationPoint = mapPoint
+            self.destinationPoint = QgsPoint(mapPoint.x(), mapPoint.y())
             # here do something with the point
 
     def calculateRoute(self):

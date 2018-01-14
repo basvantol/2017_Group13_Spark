@@ -29,21 +29,6 @@ from PyQt4 import QtGui, QtCore
 from qgis.core import *
 from qgis.networkanalysis import *
 
-from pyspatialite import dbapi2 as sqlite
-import psycopg2 as pgsql
-import numpy as np
-import math
-import os.path
-
-import os
-
-from PyQt4 import QtGui, uic
-from PyQt4.QtCore import pyqtSignal
-
-from PyQt4 import QtGui, QtCore
-from qgis.core import *
-from qgis.networkanalysis import *
-
 from PyQt4 import QtGui, QtCore, uic
 from qgis.core import *
 from qgis.networkanalysis import *
@@ -57,6 +42,7 @@ import math
 import os.path
 
 from . import utility_functions as uf
+from nearest_feature_map_tool import NearestFeatureMapTool
 
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(

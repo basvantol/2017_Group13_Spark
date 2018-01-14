@@ -164,15 +164,21 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabRating.setEnabled(False)
         self.EditButtonAccount.setEnabled(True)
         self.tabWidget.setCurrentIndex(1)
+        self.SelectStart.setEnabled(True)
+        self.SelectDestination.setEnabled(False)
+        self.ShowRoute.setEnabled(False)
+        self.RateSpot.setEnabled(False)
         print(self.LogList)
 
         uf.insertTempFeaturesGeom(uf.getLegendLayerByName(self.iface, "account layer"), [QgsPoint[0,0]], [self.LogList])
+
 
     def goToRate(self):
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(True)
         self.tabWidget.setCurrentIndex(2)
+        self.RateSpot.setEnabled(False)
 
 
     def ConfirmRating(self):
@@ -210,6 +216,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.tabWidget.setCurrentIndex(1)
+        self.SelectStart.setEnabled(True)
         print(self.RatingList)
 
     def EditAccount(self):
@@ -233,6 +240,8 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         if mapPoint:
             self.startingPoint = QgsPoint(mapPoint.x(), mapPoint.y())
             # here do something with the point
+        self.SelectDestination.setEnabled(True)
+        self.SelectStart.setEnabled(False)
 
     def enterDestinationPoi(self):
         # remember currently selected tool
@@ -248,6 +257,8 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         if mapPoint:
             self.destinationPoint = QgsPoint(mapPoint.x(), mapPoint.y())
             # here do something with the point
+        self.ShowRoute.setEnabled(True)
+        self.SelectDestination.setEnabled(False)
 
     def calculateRoute(self):
         self.deleteRoutes()
@@ -259,6 +270,9 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         uf.insertTempFeatures(routes_layer, [path], [])
         print("routing")
         self.refreshCanvas(routes_layer)
+        self.RateSpot.setEnabled(True)
+        self.ShowRoute.setEnabled(False)
+
 
     def deleteRoutes(self):
         routes_layer = uf.getLegendLayerByName(self.iface, "routing layer")

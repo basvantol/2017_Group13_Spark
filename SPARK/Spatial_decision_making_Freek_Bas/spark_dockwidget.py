@@ -63,6 +63,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
 
+
         self.TabLogin.setEnabled(True)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(False)
@@ -73,6 +74,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.canvas = self.iface.mapCanvas()
         self.plugin_dir = os.path.dirname(__file__)
         self.openScenario()
+        self.deleteRoutes()
         self.startingPoint = 0
         self.destinationPoint = 0
 

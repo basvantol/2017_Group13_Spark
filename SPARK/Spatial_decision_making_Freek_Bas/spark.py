@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 """
 /***************************************************************************
- Spatial_decision_making_Freek_Bas
+Spark
                                  A QGIS plugin
  Plugin for
                               -------------------
@@ -52,7 +52,7 @@ class Spatial_decision_making_Freek_Bas:
         locale_path = os.path.join(
             self.plugin_dir,
             'i18n',
-            'Spatial_decision_making_Freek_Bas_{}.qm'.format(locale))
+            'Spark_{}.qm'.format(locale))
 
         if os.path.exists(locale_path):
             self.translator = QTranslator()
@@ -65,10 +65,10 @@ class Spatial_decision_making_Freek_Bas:
         self.actions = []
         self.menu = self.tr(u'&SPARK')
         # TODO: We are going to let the user set this up in a future iteration
-        self.toolbar = self.iface.addToolBar(u'Spatial_decision_making_Freek_Bas')
-        self.toolbar.setObjectName(u'Spatial_decision_making_Freek_Bas')
+        self.toolbar = self.iface.addToolBar(u'Spark')
+        self.toolbar.setObjectName(u'Spark')
 
-        #print "** INITIALIZING Spatial_decision_making_Freek_Bas"
+        #print "** INITIALIZING Spark"
 
         self.pluginIsActive = False
         self.dockwidget = None
@@ -87,7 +87,7 @@ class Spatial_decision_making_Freek_Bas:
         :rtype: QString
         """
         # noinspection PyTypeChecker,PyArgumentList,PyCallByClass
-        return QCoreApplication.translate('Spatial_decision_making_Freek_Bas', message)
+        return QCoreApplication.translate('Spark', message)
 
 
     def add_action(
@@ -165,7 +165,7 @@ class Spatial_decision_making_Freek_Bas:
 
 
     def initGui(self):
-        icon_path = ':/plugins/Spatial_decision_making_Freek_Bas/icon.png'
+        icon_path = ':/plugins/Spark/icon.png'
         self.add_action(
             icon_path,
             text=self.tr(u'SPARK'),
@@ -177,7 +177,7 @@ class Spatial_decision_making_Freek_Bas:
     def onClosePlugin(self):
         """Cleanup necessary items here when plugin dockwidget is closed"""
 
-        #print "** CLOSING Spatial_decision_making_Freek_Bas"
+        #print "** CLOSING Spark"
 
         # disconnects
         self.dockwidget.closingPlugin.disconnect(self.onClosePlugin)
@@ -194,7 +194,7 @@ class Spatial_decision_making_Freek_Bas:
     def unload(self):
         """Removes the plugin menu item and icon from QGIS GUI."""
 
-        #print "** UNLOAD Spatial_decision_making_Freek_Bas"
+        #print "** UNLOAD Spark"
 
         for action in self.actions:
             self.iface.removePluginMenu(
@@ -212,7 +212,7 @@ class Spatial_decision_making_Freek_Bas:
         if not self.pluginIsActive:
             self.pluginIsActive = True
 
-            #print "** STARTING Spatial_decision_making_Freek_Bas"
+            #print "** STARTING Spark"
 
             # dockwidget may not exist if:
             #    first run of plugin

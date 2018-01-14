@@ -2,7 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41c0edf7-8e8b-4260-bffb-c40e25be5746" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.dbf" afterPath="$PROJECT_DIR$/sample_data/account layer.dbf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.shp" afterPath="$PROJECT_DIR$/sample_data/account layer.shp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.shx" afterPath="$PROJECT_DIR$/sample_data/account layer.shx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/rating layer.dbf" afterPath="$PROJECT_DIR$/sample_data/rating layer.dbf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/rating layer.shp" afterPath="$PROJECT_DIR$/sample_data/rating layer.shp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/rating layer.shx" afterPath="$PROJECT_DIR$/sample_data/rating layer.shx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.dbf" afterPath="$PROJECT_DIR$/sample_data/routing layer.dbf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.shp" afterPath="$PROJECT_DIR$/sample_data/routing layer.shp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.shx" afterPath="$PROJECT_DIR$/sample_data/routing layer.shx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata.txt" afterPath="$PROJECT_DIR$/metadata.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pb_tool.cfg" afterPath="$PROJECT_DIR$/pb_tool.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/start_project.qgs" afterPath="$PROJECT_DIR$/sample_data/start_project.qgs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark.py" afterPath="$PROJECT_DIR$/spark.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_dockwidget.py" afterPath="$PROJECT_DIR$/spark_dockwidget.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -17,8 +30,8 @@
       <file leaf-file-name="spark_dockwidget.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="250">
-              <caret line="279" column="51" lean-forward="false" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
+            <state relative-caret-position="157">
+              <caret line="107" column="71" lean-forward="false" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
               <folding>
                 <element signature="e#1166#1175#0" expanded="true" />
               </folding>
@@ -26,22 +39,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="suburbia_search_tool_dockwidget.py" pinned="false" current-in-tab="false">
-        <entry file="file://$USER_HOME$/Desktop/MyPlugin/suburbia_search_tool_dockwidget.py">
+      <file leaf-file-name="spark.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/spark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4074">
-              <caret line="215" column="13" lean-forward="false" selection-start-line="215" selection-start-column="13" selection-end-line="215" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="utility_functions.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utility_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4389">
-              <caret line="217" column="4" lean-forward="false" selection-start-line="217" selection-start-column="4" selection-end-line="217" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="94">
+              <caret line="167" column="37" lean-forward="false" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
+              <folding>
+                <element signature="e#1110#1189#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -50,11 +55,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>build</find>
-      <find>conf</find>
-      <find>if</find>
-      <find>getnetwork</find>
-      <find>selectedlayer</find>
       <find>selectlayercombo</find>
       <find>getn</find>
       <find>de</find>
@@ -80,6 +80,11 @@
       <find>self.confirmbuttonrat</find>
       <find>get</find>
       <find>.text</find>
+      <find>spatial_decision_making_Freek_Bas</find>
+      <find>spatial_decision_making_freek_bas</find>
+      <find>icons</find>
+      <find>icon</find>
+      <find>icon.png</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -88,12 +93,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/metadata.txt" />
-        <option value="$PROJECT_DIR$/spark.py" />
         <option value="$USER_HOME$/Desktop/PluginForAirqInRotterdam/airq_rotterdam_dockwidget.py" />
-        <option value="$PROJECT_DIR$/pb_tool.cfg" />
         <option value="$PROJECT_DIR$/../../SpatialDecision/spatial_decision_dockwidget.py" />
         <option value="$PROJECT_DIR$/spark_dockwidget.py" />
+        <option value="$PROJECT_DIR$/metadata.txt" />
+        <option value="$PROJECT_DIR$/pb_tool.cfg" />
+        <option value="$PROJECT_DIR$/spark.py" />
       </list>
     </option>
   </component>
@@ -172,7 +177,7 @@
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15037593" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15252417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13926941" sideWeight="0.128125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -557,25 +562,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="32" column="9" lean-forward="false" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Desktop/PluginForAirqInRotterdam/airq_rotterdam_dockwidget.py" />
     <entry file="file://$PROJECT_DIR$/../../SpatialDecision/utility_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="290" column="5" lean-forward="false" selection-start-line="290" selection-start-column="4" selection-end-line="290" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pb_tool.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="60" column="8" lean-forward="true" selection-start-line="60" selection-start-column="8" selection-end-line="60" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -593,32 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="163">
           <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/MyPlugin/suburbia_search_tool_dockwidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4074">
-          <caret line="215" column="13" lean-forward="false" selection-start-line="215" selection-start-column="13" selection-end-line="215" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -630,10 +599,52 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Desktop/MyPlugin/suburbia_search_tool_dockwidget.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="215" column="13" lean-forward="false" selection-start-line="215" selection-start-column="13" selection-end-line="215" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pb_tool.cfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="94">
+          <caret line="167" column="37" lean-forward="false" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
+          <folding>
+            <element signature="e#1110#1189#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="279" column="51" lean-forward="false" selection-start-line="279" selection-start-column="51" selection-end-line="279" selection-end-column="51" />
+        <state relative-caret-position="157">
+          <caret line="107" column="71" lean-forward="false" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
           <folding>
             <element signature="e#1166#1175#0" expanded="true" />
           </folding>

@@ -72,6 +72,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.LoginButton.setEnabled(False)
         self.ConfirmButtonAccount.setEnabled(False)
         self.ConfirmButtonRating.setEnabled(False)
+        self.ratingbutton1.setChecked(True)
 
 
         self.iface=iface
@@ -247,6 +248,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.RateSpot.setEnabled(False)
 
 
+
     def ConfirmRating(self):
         self.RatingList = []
 
@@ -283,6 +285,11 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabRating.setEnabled(False)
         self.tabWidget.setCurrentIndex(2)
         self.SelectStart.setEnabled(True)
+        self.checkBoxAccessability.setChecked(False)
+        self.checkBoxQuantity.setChecked(False)
+        self.checkBoxLocation.setChecked(False)
+        self.checkBoxCondition.setChecked(False)
+        self.ratingbutton1.setChecked(True)
 
         uf.insertTempFeatures(uf.getLegendLayerByName(self.iface, "rating layer"), [self.destinationPoint], [self.RatingList])
 

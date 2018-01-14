@@ -143,7 +143,7 @@
         <property name="geometry">
          <rect>
           <x>50</x>
-          <y>10</y>
+          <y>30</y>
           <width>321</width>
           <height>101</height>
          </rect>
@@ -155,84 +155,16 @@
          <set>Qt::AlignCenter</set>
         </property>
        </widget>
-       <widget class="QLabel" name="AccountLabel_2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>401</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>401</width>
-          <height>31</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>401</width>
-          <height>31</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>TU Delft-UltraLight</family>
-          <pointsize>26</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Login</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
       </widget>
       <widget class="QWidget" name="TabAccount">
        <attribute name="title">
         <string>Account</string>
        </attribute>
-       <widget class="QLabel" name="AccountLabel">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>401</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>401</width>
-          <height>31</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>401</width>
-          <height>31</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>TU Delft-UltraLight</family>
-          <pointsize>26</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Account</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
        <widget class="QWidget" name="formLayoutWidget">
         <property name="geometry">
          <rect>
           <x>20</x>
-          <y>300</y>
+          <y>160</y>
           <width>381</width>
           <height>304</height>
          </rect>
@@ -644,7 +576,7 @@
         <property name="geometry">
          <rect>
           <x>150</x>
-          <y>610</y>
+          <y>550</y>
           <width>113</width>
           <height>28</height>
          </rect>
@@ -669,7 +601,7 @@
         <property name="geometry">
          <rect>
           <x>50</x>
-          <y>10</y>
+          <y>30</y>
           <width>321</width>
           <height>101</height>
          </rect>
@@ -686,40 +618,6 @@
        <attribute name="title">
         <string>Destination</string>
        </attribute>
-       <widget class="QLabel" name="label_2">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>140</y>
-          <width>401</width>
-          <height>31</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>401</width>
-          <height>31</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>401</width>
-          <height>31</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>TU Delft-UltraLight</family>
-          <pointsize>26</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Destination</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
        <widget class="QWidget" name="gridLayoutWidget_4">
         <property name="geometry">
          <rect>
@@ -911,7 +809,7 @@
         <property name="geometry">
          <rect>
           <x>50</x>
-          <y>10</y>
+          <y>30</y>
           <width>321</width>
           <height>101</height>
          </rect>
@@ -928,40 +826,6 @@
        <attribute name="title">
         <string>Rating</string>
        </attribute>
-       <widget class="QLabel" name="label_4">
-        <property name="geometry">
-         <rect>
-          <x>10</x>
-          <y>130</y>
-          <width>401</width>
-          <height>51</height>
-         </rect>
-        </property>
-        <property name="minimumSize">
-         <size>
-          <width>401</width>
-          <height>51</height>
-         </size>
-        </property>
-        <property name="maximumSize">
-         <size>
-          <width>401</width>
-          <height>51</height>
-         </size>
-        </property>
-        <property name="font">
-         <font>
-          <family>TU Delft-UltraLight</family>
-          <pointsize>26</pointsize>
-         </font>
-        </property>
-        <property name="text">
-         <string>Rating</string>
-        </property>
-        <property name="alignment">
-         <set>Qt::AlignCenter</set>
-        </property>
-       </widget>
        <widget class="QLabel" name="label_24">
         <property name="geometry">
          <rect>
@@ -1243,7 +1107,7 @@
         <property name="geometry">
          <rect>
           <x>50</x>
-          <y>10</y>
+          <y>30</y>
           <width>321</width>
           <height>101</height>
          </rect>
@@ -1264,7 +1128,7 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

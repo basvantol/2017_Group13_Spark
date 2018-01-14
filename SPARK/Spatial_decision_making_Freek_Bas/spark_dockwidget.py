@@ -69,6 +69,10 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabRating.setEnabled(False)
         self.TabAccount.setEnabled(False)
         self.EditButtonAccount.setEnabled(False)
+        self.LoginButton.setEnabled(False)
+        self.ConfirmButtonAccount.setEnabled(False)
+        self.ConfirmButtonRating.setEnabled(False)
+
 
         self.iface=iface
         self.canvas = self.iface.mapCanvas()
@@ -89,8 +93,6 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.SelectDestination.clicked.connect(self.enterDestinationPoi)
         self.emitDestinationPoint.canvasClicked.connect(self.getDestinationPoint)
 
-
-
         #input
         self.LoginButton.clicked.connect(self.LoginAccount)
         self.RegisterButton.clicked.connect(self.RegisterAccount)
@@ -106,6 +108,28 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.logoLabel_2.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
         self.logoLabel_3.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
         self.logoLabel_4.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
+
+        self.LoginNameInput.textChanged.connect(self.enableLogin)
+
+        self.NameInput.textChanged.connect(self.enableAccount)
+        self.HomeAddressInput.textChanged.connect(self.enableAccount)
+        self.WorkAddressInput.textChanged.connect(self.enableAccount)
+        self.YesHome.clicked.connect(self.enableAccount)
+        self.NoHome.clicked.connect(self.enableAccount)
+        self.SharedHome.clicked.connect(self.enableAccount)
+        self.YesWork.clicked.connect(self.enableAccount)
+        self.NoWork.clicked.connect(self.enableAccount)
+        self.SharedWork.clicked.connect(self.enableAccount)
+
+        self.ratingbutton1.clicked.connect(self.enableRating)
+        self.ratingbutton1.clicked.connect(self.enableRating)
+        self.ratingbutton1.clicked.connect(self.enableRating)
+        self.ratingbutton1.clicked.connect(self.enableRating)
+        self.checkBoxAccessability.clicked.connect(self.enableRating)
+        self.checkBoxQuantity.clicked.connect(self.enableRating)
+        self.checkBoxLocation.clicked.connect(self.enableRating)
+        self.checkBoxCondition.clicked.connect(self.enableRating)
+
 
         self.graph = QgsGraph()
         self.tied_points = []
@@ -136,6 +160,36 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         layers_dict['rating'] = layer_names[4]
         layers_dict['account'] = layer_names[5]
         return layers_dict
+
+    def enableLogin(self):
+        if self.LoginNameInput.isModified() == True:
+            self.LoginButton.setEnabled(True)
+        else:
+            self.LoginButton.setEnabled(False)
+
+    def enableAccount(self):
+        if self.NameInput.isModified() == True:
+            if self.HomeAddressInput.isModified() == True:
+                if self.WorkAddressInput.isModified() == True:
+                    if (self.YesHome.isChecked() == True or self.NoHome.isChecked() == True or self.SharedHome.isChecked() == True):
+                        print("JOE")
+                        if (self.YesWork.isChecked() == True or self.NoWork.isChecked() == True or self.SharedWork.isChecked() == True):
+                            self.ConfirmButtonAccount.setEnabled(True)
+        else:
+            self.ConfirmButtonAccount.setEnabled(False)
+
+
+    def enableRating(self):
+        if (self.ratingbutton1.isChecked() == True or self.ratingbutton2.isChecked() == True or self.ratingbutton3.isChecked() == True or self.ratingbutton4.isChecked() == True or self.ratingbutton5.isChecked() == True):
+            if (self.checkBoxAccessability.isChecked() == True or self.checkBoxQuantity.isChecked() == True or self.checkBoxLocation.isChecked() == True or self.checkBoxCondition.isChecked() == True):
+                self.ConfirmButtonRating.setEnabled(True)
+        else:
+            self.ConfirmButtonRating.setEnabled(False)
+
+
+
+
+
 
     def LoginAccount(self):
         self.TabLogin.setEnabled(False)

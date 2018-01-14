@@ -168,7 +168,7 @@ class Spatial_decision_making_Freek_Bas:
         icon_path = ':/plugins/Spark/icon.png'
         self.add_action(
             icon_path,
-            text=self.tr(u'SPARK'),
+            text=self.tr(u'Spark'),
             callback=self.run,
             parent=self.iface.mainWindow())
 

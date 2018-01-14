@@ -2,21 +2,100 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="41c0edf7-8e8b-4260-bffb-c40e25be5746" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.dbf" afterPath="$PROJECT_DIR$/sample_data/account layer.dbf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.shp" afterPath="$PROJECT_DIR$/sample_data/account layer.shp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/account layer.shx" afterPath="$PROJECT_DIR$/sample_data/account layer.shx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/rating layer.dbf" afterPath="$PROJECT_DIR$/sample_data/rating layer.dbf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/rating layer.shp" afterPath="$PROJECT_DIR$/sample_data/rating layer.shp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/rating layer.shx" afterPath="$PROJECT_DIR$/sample_data/rating layer.shx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.dbf" afterPath="$PROJECT_DIR$/sample_data/routing layer.dbf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.shp" afterPath="$PROJECT_DIR$/sample_data/routing layer.shp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/routing layer.shx" afterPath="$PROJECT_DIR$/sample_data/routing layer.shx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/help/build/doctrees/environment.pickle" afterPath="$PROJECT_DIR$/help/build/doctrees/environment.pickle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../.gitignore" afterPath="$PROJECT_DIR$/../../.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../LICENSE" afterPath="$PROJECT_DIR$/../../LICENSE" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../Notes" afterPath="$PROJECT_DIR$/../../Notes" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../README.md" afterPath="$PROJECT_DIR$/../../README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/icons/lightning.svg" afterPath="$PROJECT_DIR$/icons/lightning.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/metadata.txt" afterPath="$PROJECT_DIR$/metadata.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pb_tool.cfg" afterPath="$PROJECT_DIR$/pb_tool.cfg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sample_data/start_project.qgs" afterPath="$PROJECT_DIR$/sample_data/start_project.qgs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/mun_data/mun.csv" afterPath="$PROJECT_DIR$/mun_data/mun.csv" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources.py" afterPath="$PROJECT_DIR$/resources.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark.py" afterPath="$PROJECT_DIR$/spark.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_dockwidget.py" afterPath="$PROJECT_DIR$/spark_dockwidget.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spark_dockwidget_base.ui" afterPath="$PROJECT_DIR$/spark_dockwidget_base.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utility_functions.py" afterPath="$PROJECT_DIR$/utility_functions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/.gitignore" afterPath="$PROJECT_DIR$/../../SpatialDecision/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/Makefile" afterPath="$PROJECT_DIR$/../../SpatialDecision/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/README.html" afterPath="$PROJECT_DIR$/../../SpatialDecision/README.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/README.txt" afterPath="$PROJECT_DIR$/../../SpatialDecision/README.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/__init__.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/__init__.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/__init__.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/biffh.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/biffh.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/book.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/book.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/compdoc.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/compdoc.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/formatting.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/formatting.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/formula.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/formula.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/info.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/info.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/licences.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/licences.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/sheet.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/sheet.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/timemachine.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/timemachine.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/xldate.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/external/xlrd/xldate.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/.buildinfo" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/.buildinfo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/Makefile" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_sources/index.txt" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_sources/index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/basic.css" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/basic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/classic.css" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/classic.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/default.css" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/default.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/doctools.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/doctools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/jquery-1.11.1.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/jquery-1.11.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/jquery.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/jquery.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/pygments.css" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/pygments.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/searchtools.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/searchtools.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/sidebar.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/sidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/underscore-1.3.1.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/underscore-1.3.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/underscore.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/underscore.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/_static/websupport.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/_static/websupport.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/.buildinfo" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/.buildinfo" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/_sources/index.txt" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/_sources/index.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/_static/jquery-1.11.1.js" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/_static/jquery-1.11.1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/_static/pygments.css" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/build/html/_static/pygments.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/genindex.html" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/genindex.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/index.html" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/make.bat" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/make.bat" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/search.html" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/source/conf.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/source/conf.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/help/source/index.rst" afterPath="$PROJECT_DIR$/../../SpatialDecision/help/source/index.rst" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/i18n/af.ts" afterPath="$PROJECT_DIR$/../../SpatialDecision/i18n/af.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/metadata.txt" afterPath="$PROJECT_DIR$/../../SpatialDecision/metadata.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/pb_tool.cfg" afterPath="$PROJECT_DIR$/../../SpatialDecision/pb_tool.cfg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/plugin_upload.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/plugin_upload.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/pylintrc" afterPath="$PROJECT_DIR$/../../SpatialDecision/pylintrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/resources.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/resources.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/resources.qrc" afterPath="$PROJECT_DIR$/../../SpatialDecision/resources.qrc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/scripts/compile-strings.sh" afterPath="$PROJECT_DIR$/../../SpatialDecision/scripts/compile-strings.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/scripts/run-env-linux.sh" afterPath="$PROJECT_DIR$/../../SpatialDecision/scripts/run-env-linux.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/scripts/update-strings.sh" afterPath="$PROJECT_DIR$/../../SpatialDecision/scripts/update-strings.sh" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/spatial_decision.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/spatial_decision.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/spatial_decision_dockwidget.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/spatial_decision_dockwidget.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/spatial_decision_dockwidget_base.ui" afterPath="$PROJECT_DIR$/../../SpatialDecision/spatial_decision_dockwidget_base.ui" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/__init__.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/__init__.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/qgis_interface.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/qgis_interface.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.asc" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.asc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.asc.aux.xml" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.asc.aux.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.keywords" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.keywords" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.lic" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.lic" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.qml" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/tenbytenraster.qml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/test_init.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/test_init.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/test_qgis_environment.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/test_qgis_environment.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/test_resources.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/test_resources.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/test_spatial_decision_dockwidget.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/test_spatial_decision_dockwidget.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/test_translations.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/test_translations.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/test/utilities.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/test/utilities.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../SpatialDecision/utility_functions.py" afterPath="$PROJECT_DIR$/../../SpatialDecision/utility_functions.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/delft_roads.qpj" afterPath="$PROJECT_DIR$/../../sample_data/delft_roads.qpj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/dissolve_results.qpj" afterPath="$PROJECT_DIR$/../../sample_data/dissolve_results.qpj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/obstacles.qpj" afterPath="$PROJECT_DIR$/../../sample_data/obstacles.qpj" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/osm_result.qgs" afterPath="$PROJECT_DIR$/../../sample_data/osm_result.qgs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/potential-idp.license" afterPath="$PROJECT_DIR$/../../sample_data/potential-idp.license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/potential-idp.qml" afterPath="$PROJECT_DIR$/../../sample_data/potential-idp.qml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/roads.license" afterPath="$PROJECT_DIR$/../../sample_data/roads.license" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/roads.qml" afterPath="$PROJECT_DIR$/../../sample_data/roads.qml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/route_test.qgs" afterPath="$PROJECT_DIR$/../../sample_data/route_test.qgs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/styles/buffer.qml" afterPath="$PROJECT_DIR$/../../sample_data/styles/buffer.qml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../sample_data/styles/obstacle_danger.qml" afterPath="$PROJECT_DIR$/../../sample_data/styles/obstacle_danger.qml" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,11 +106,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="spark_dockwidget.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="spark_dockwidget.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="107" column="71" lean-forward="false" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
+            <state relative-caret-position="168">
+              <caret line="167" column="48" lean-forward="false" selection-start-line="167" selection-start-column="48" selection-end-line="167" selection-end-column="48" />
               <folding>
                 <element signature="e#1166#1175#0" expanded="true" />
               </folding>
@@ -39,14 +118,34 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="spark.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="spark.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/spark.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="94">
-              <caret line="167" column="37" lean-forward="false" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
+            <state relative-caret-position="241">
+              <caret line="168" column="24" lean-forward="true" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
               <folding>
                 <element signature="e#1110#1189#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="metadata.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/metadata.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="84">
+              <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="346">
+              <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -55,9 +154,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>selectlayercombo</find>
-      <find>getn</find>
-      <find>de</find>
       <find>delet</find>
       <find>layers</find>
       <find>layer</find>
@@ -83,8 +179,11 @@
       <find>spatial_decision_making_Freek_Bas</find>
       <find>spatial_decision_making_freek_bas</find>
       <find>icons</find>
-      <find>icon</find>
       <find>icon.png</find>
+      <find>welcom</find>
+      <find>spatial</find>
+      <find>SPARK</find>
+      <find>icon</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -95,9 +194,9 @@
       <list>
         <option value="$USER_HOME$/Desktop/PluginForAirqInRotterdam/airq_rotterdam_dockwidget.py" />
         <option value="$PROJECT_DIR$/../../SpatialDecision/spatial_decision_dockwidget.py" />
+        <option value="$PROJECT_DIR$/pb_tool.cfg" />
         <option value="$PROJECT_DIR$/spark_dockwidget.py" />
         <option value="$PROJECT_DIR$/metadata.txt" />
-        <option value="$PROJECT_DIR$/pb_tool.cfg" />
         <option value="$PROJECT_DIR$/spark.py" />
       </list>
     </option>
@@ -130,7 +229,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -143,11 +241,12 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../SpatialDecision" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,14 +275,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15252417" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1546724" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13926941" sideWeight="0.128125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900944" sideWeight="0.871875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32900944" sideWeight="0.871875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24973147" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -212,50 +312,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="58" column="67" lean-forward="false" selection-start-line="58" selection-start-column="67" selection-end-line="58" selection-end-column="67" />
-          <folding>
-            <element signature="e#1166#1175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1166#1175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pb_tool.cfg">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1260">
-          <caret line="60" column="29" lean-forward="false" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#1166#1175#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4494">
-          <caret line="221" column="88" lean-forward="false" selection-start-line="221" selection-start-column="88" selection-end-line="221" selection-end-column="88" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="861">
@@ -584,13 +640,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="163">
-          <caret line="15" column="14" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utility_functions.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4389">
@@ -603,7 +652,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="748">
           <caret line="215" column="13" lean-forward="false" selection-start-line="215" selection-start-column="13" selection-end-line="215" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -611,25 +659,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="63">
           <caret line="60" column="29" lean-forward="true" selection-start-line="60" selection-start-column="29" selection-end-line="60" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/metadata.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="55" lean-forward="false" selection-start-line="16" selection-start-column="55" selection-end-line="16" selection-end-column="55" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spark.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="94">
-          <caret line="167" column="37" lean-forward="false" selection-start-line="167" selection-start-column="37" selection-end-line="167" selection-end-column="37" />
-          <folding>
-            <element signature="e#1110#1189#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -637,16 +666,78 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="151">
           <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pylintrc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1260">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="166">
+          <caret line="95" column="30" lean-forward="false" selection-start-line="95" selection-start-column="29" selection-end-line="95" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/icon.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="184">
+          <caret line="24" column="0" lean-forward="true" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="346">
+          <caret line="27" column="18" lean-forward="true" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/spark_dockwidget.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="107" column="71" lean-forward="false" selection-start-line="107" selection-start-column="71" selection-end-line="107" selection-end-column="71" />
+        <state relative-caret-position="168">
+          <caret line="167" column="48" lean-forward="false" selection-start-line="167" selection-start-column="48" selection-end-line="167" selection-end-column="48" />
           <folding>
             <element signature="e#1166#1175#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/metadata.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="13" column="28" lean-forward="false" selection-start-line="13" selection-start-column="25" selection-end-line="13" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/.qgis2/python/plugins/MyPlugin/suburbia_search_tool.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1418">
+          <caret line="94" column="12" lean-forward="false" selection-start-line="94" selection-start-column="8" selection-end-line="94" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spark.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="241">
+          <caret line="168" column="24" lean-forward="true" selection-start-line="168" selection-start-column="24" selection-end-line="168" selection-end-column="24" />
+          <folding>
+            <element signature="e#1110#1189#0" expanded="true" />
           </folding>
         </state>
       </provider>

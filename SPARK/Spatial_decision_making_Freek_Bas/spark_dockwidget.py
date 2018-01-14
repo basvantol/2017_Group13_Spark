@@ -165,6 +165,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
     def enableLogin(self):
         if self.checkLogin() == True:
             self.LoginButton.setEnabled(True)
+            self.RegisterButton.setEnabled(False)
         else:
             self.LoginButton.setEnabled(False)
 

@@ -566,9 +566,12 @@
         </layout>
        </widget>
        <widget class="QPushButton" name="SelectDestination">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
-          <x>270</x>
+          <x>140</x>
           <y>130</y>
           <width>113</width>
           <height>32</height>
@@ -593,7 +596,7 @@
        <widget class="QPushButton" name="EditButtonAccount">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>10</x>
           <y>210</y>
           <width>113</width>
           <height>32</height>
@@ -616,10 +619,13 @@
         </property>
        </widget>
        <widget class="QPushButton" name="ShowRoute">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>270</x>
-          <y>170</y>
+          <y>130</y>
           <width>113</width>
           <height>32</height>
          </rect>
@@ -641,6 +647,9 @@
         </property>
        </widget>
        <widget class="QPushButton" name="RateSpot">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
         <property name="geometry">
          <rect>
           <x>270</x>
@@ -668,7 +677,7 @@
        <widget class="QPushButton" name="SelectStart">
         <property name="geometry">
          <rect>
-          <x>20</x>
+          <x>10</x>
           <y>130</y>
           <width>113</width>
           <height>32</height>
@@ -1015,7 +1024,7 @@
  <resources/>
  <connections/>
  <buttongroups>
-  <buttongroup name="buttonGroup"/>
   <buttongroup name="buttonGroup_2"/>
+  <buttongroup name="buttonGroup"/>
  </buttongroups>
 </ui>

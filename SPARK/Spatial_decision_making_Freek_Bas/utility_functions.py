@@ -34,6 +34,8 @@ import os.path
 #
 # Layer functions
 #
+
+
 def getLegendLayers(iface, geom='all', provider='all'):
     """
     Return list of layer objects in the legend, with specific geometry type and/or data provider
@@ -92,7 +94,7 @@ def isLayerProjected(layer):
 def getLegendLayerByName(iface, name):
     layer = None
     for i in iface.legendInterface().layers():
-        if i.name() == name:
+        if i.name().lower() == name.lower():
             layer = i
     return layer
 

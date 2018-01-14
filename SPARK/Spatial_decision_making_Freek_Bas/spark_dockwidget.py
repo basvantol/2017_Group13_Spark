@@ -150,6 +150,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.LoginButton.setEnabled(False)
 
     def RegisterAccount(self):
+        self.TabLogin.setEnabled(False)
         self.TabAccount.setEnabled(True)
         self.TabDestination.setEnabled(False)
         self.EditButtonAccount.setEnabled(False)

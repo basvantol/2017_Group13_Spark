@@ -42,7 +42,7 @@ import math
 import os.path
 
 from . import utility_functions as uf
-from nearest_feature_map_tool import NearestFeatureMapTool
+
 
 
 FORM_CLASS, _ = uic.loadUiType(os.path.join(

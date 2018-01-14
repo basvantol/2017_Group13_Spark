@@ -243,6 +243,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         path = uf.calculateRouteDijkstra(self.graph, self.tied_points, 0, 1)
         routes_layer = uf.getLegendLayerByName(self.iface, "routing layer")
         uf.insertTempFeatures(routes_layer, [path], [])
+        print("routing")
         self.refreshCanvas(routes_layer)
 
     def deleteRoutes(self):

@@ -63,9 +63,10 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         # #widgets-and-dialogs-with-auto-connect
         self.setupUi(self)
 
+        self.TabLogin.setEnabled(True)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(False)
-        self.TabAccount.setEnabled(True)
+        self.TabAccount.setEnabled(False)
         self.EditButtonAccount.setEnabled(False)
 
         self.iface=iface
@@ -89,6 +90,8 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
 
 
         #input
+        self.LoginButton.clicked.connect(self.LoginAccount)
+        self.RegisterButton.clicked.connect(self.RegisterAccount)
         self.ConfirmButtonAccount.clicked.connect(self.ConfirmAccount)
         self.RateSpot.clicked.connect(self.goToRate)
         self.ConfirmButtonRating.clicked.connect(self.ConfirmRating)
@@ -98,6 +101,9 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.ShowRoute.clicked.connect(self.calculateRoute)
 
         self.logoLabel.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
+        self.logoLabel_2.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
+        self.logoLabel_3.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
+        self.logoLabel_4.setPixmap(QtGui.QPixmap(self.plugin_dir + '/icons/Spark.png'))
 
         self.graph = QgsGraph()
         self.tied_points = []
@@ -129,6 +135,27 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         layers_dict['account'] = layer_names[5]
         return layers_dict
 
+    def LoginAccount(self):
+        self.TabLogin.setEnabled(False)
+        self.TabAccount.setEnabled(False)
+        self.TabDestination.setEnabled(True)
+        self.TabRating.setEnabled(False)
+        self.EditButtonAccount.setEnabled(True)
+        self.tabWidget.setCurrentIndex(2)
+        self.SelectStart.setEnabled(True)
+        self.SelectDestination.setEnabled(False)
+        self.ShowRoute.setEnabled(False)
+        self.RateSpot.setEnabled(False)
+        self.RegisterButton.setEnabled(False)
+        self.LoginButton.setEnabled(False)
+
+    def RegisterAccount(self):
+        self.TabAccount.setEnabled(True)
+        self.TabDestination.setEnabled(False)
+        self.EditButtonAccount.setEnabled(False)
+        self.tabWidget.setCurrentIndex(1)
+
+
     def ConfirmAccount(self):
         self.LogList = []
         self.LogList.append(self.HomeAddressInput.text())
@@ -145,11 +172,12 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
             self.LogList.append("No")
         if self.SharedWork.isChecked() == True:
             self.LogList.append("Shared")
+        self.LogList.append(self.NameInput.text())
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.EditButtonAccount.setEnabled(True)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(2)
         self.SelectStart.setEnabled(True)
         self.SelectDestination.setEnabled(False)
         self.ShowRoute.setEnabled(False)
@@ -162,7 +190,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(True)
-        self.tabWidget.setCurrentIndex(2)
+        self.tabWidget.setCurrentIndex(3)
         self.RateSpot.setEnabled(False)
 
 
@@ -196,11 +224,11 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
             self.RatingList.append(True)
         else:
             self.RatingList.append(False)
-        self.RatingList.append(self.HomeAddressInput.text())
+        self.RatingList.append(self.NameInput.text() + self.LoginNameInput.text())
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(2)
         self.SelectStart.setEnabled(True)
 
         uf.insertTempFeatures(uf.getLegendLayerByName(self.iface, "rating layer"), [self.destinationPoint], [self.RatingList])
@@ -210,7 +238,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabDestination.setEnabled(False)
         self.TabRating.setEnabled(False)
         self.EditButtonAccount.setEnabled(False)
-        self.tabWidget.setCurrentIndex(0)
+        self.tabWidget.setCurrentIndex(1)
 
     def enterStartPoi(self):
         # remember currently selected tool

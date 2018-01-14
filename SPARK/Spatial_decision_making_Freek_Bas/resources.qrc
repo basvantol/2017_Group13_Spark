@@ -1,5 +1,5 @@
 <RCC>
-    <qresource prefix="/plugins/Spatial_decision_making_Freek_Bas" >
+    <qresource prefix="/plugins/Spark" >
         <file>icon.png</file>
     </qresource>
 </RCC>

@@ -168,7 +168,6 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.SelectDestination.setEnabled(False)
         self.ShowRoute.setEnabled(False)
         self.RateSpot.setEnabled(False)
-        print(self.LogList)
 
         uf.insertTempFeatures(uf.getLegendLayerByName(self.iface, "account layer"), [QgsPoint(0,0)], [self.LogList])
 
@@ -217,7 +216,6 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.TabRating.setEnabled(False)
         self.tabWidget.setCurrentIndex(1)
         self.SelectStart.setEnabled(True)
-        print(self.RatingList)
 
         uf.insertTempFeatures(uf.getLegendLayerByName(self.iface, "rating layer"), [self.destinationPoint], [self.RatingList])
 

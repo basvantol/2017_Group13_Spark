@@ -7,7 +7,7 @@
                              -------------------
         begin                : 2017-12-05
         git sha              : $Format:%H$
-        copyright            : (C) 2017 by Bas van Tol Test2
+        copyright            : (C) 2017 by Bas van Tol & Freek Akkermans
         email                : bvantol3@gmail.com
  ***************************************************************************/
 
@@ -117,7 +117,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.tied_points = []
 
         self.LogList = []
-        self.RatingForm = []
+        self.RatingList = []
 
     def closeEvent(self, event):
         self.closingPlugin.emit()
@@ -147,24 +147,26 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
         self.LogList = []
         self.LogList.append(self.HomeAddressInput.text())
         if self.YesHome.isChecked() == True:
-            self.LogList.append("YesHome")
+            self.LogList.append("Yes")
         if self.NoHome.isChecked() == True:
-            self.LogList.append("NoHome")
+            self.LogList.append("No")
         if self.SharedHome.isChecked() == True:
-            self.LogList.append("SharedHome")
+            self.LogList.append("Shared")
         self.LogList.append(self.WorkAddressInput.text())
         if self.YesWork.isChecked() == True:
-            self.LogList.append("YesWork")
+            self.LogList.append("Yes")
         if self.NoWork.isChecked() == True:
-            self.LogList.append("NoWork")
+            self.LogList.append("No")
         if self.SharedWork.isChecked() == True:
-            self.LogList.append("SharedWork")
+            self.LogList.append("Shared")
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.EditButtonAccount.setEnabled(True)
         self.tabWidget.setCurrentIndex(1)
         print(self.LogList)
+
+        uf.insertTempFeaturesGeom(uf.getLegendLayerByName(self.iface, "account layer"), [QgsPoint[0,0]], [self.LogList])
 
     def goToRate(self):
         self.TabAccount.setEnabled(False)
@@ -174,29 +176,41 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
 
 
     def ConfirmRating(self):
-        self.RatingForm = []
-        self.RatingForm.append(self.RatingList.currentItem())
+        self.RatingList = []
+
+        if self.ratingbutton1.isChecked() == True:
+            self.RatingList.append(1)
+        if self.ratingbutton2.isChecked() == True:
+            self.RatingList.append(2)
+        if self.ratingbutton3.isChecked() == True:
+            self.RatingList.append(3)
+        if self.ratingbutton4.isChecked() == True:
+            self.RatingList.append(4)
+        if self.ratingbutton5.isChecked() == True:
+            self.RatingList.append(5)
+
         if self.checkBoxAccessability.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
         if self.checkBoxQuantity.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
         if self.checkBoxLocation.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
         if self.checkBoxCondition.isChecked() == True:
-            self.RatingForm.append(True)
+            self.RatingList.append(True)
         else:
-            self.RatingForm.append(False)
+            self.RatingList.append(False)
+        self.RatingList.append(self.HomeAddressInput.text())
         self.TabAccount.setEnabled(False)
         self.TabDestination.setEnabled(True)
         self.TabRating.setEnabled(False)
         self.tabWidget.setCurrentIndex(1)
-        print(self.RatingForm)
+        print(self.RatingList)
 
     def EditAccount(self):
         self.TabAccount.setEnabled(True)

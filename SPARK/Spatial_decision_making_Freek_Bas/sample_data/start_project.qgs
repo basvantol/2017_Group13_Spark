@@ -5,22 +5,22 @@
   <evaluateDefaultValues active="0"/>
   <layer-tree-group expanded="1" checked="Qt::PartiallyChecked" name="">
     <customproperties/>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="routing_layer20180112222154645" source="C:\Users\bvant\Documents\GitHub\GEO1005-Bas-Freek\SPARK\Spatial_decision_making_Freek_Bas\sample_data\routing layer.shp" name="routing layer">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="routing_layer20180112222154645" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/routing layer.shp" name="routing layer">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="parking_clipped20180112213450999" source="C:\Users\bvant\Documents\GitHub\GEO1005-Bas-Freek\SPARK\Spatial_decision_making_Freek_Bas\sample_data\parking clipped.shp" name="parking">
+    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="parking_clipped20180112213450999" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/parking clipped.shp" name="parking">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="buurt_rotterdam20180112104442057" source="C:\Users\bvant\Documents\GitHub\GEO1005-Bas-Freek\SPARK\Spatial_decision_making_Freek_Bas\sample_data\buurt_rotterdam.shp" name="base map">
+    <layer-tree-layer expanded="0" providerKey="ogr" checked="Qt::Checked" id="buurt_rotterdam20180112104442057" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/buurt_rotterdam.shp" name="base map">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="clipped_wegen20180112104438497" source="C:\Users\bvant\Documents\GitHub\GEO1005-Bas-Freek\SPARK\Spatial_decision_making_Freek_Bas\sample_data\clipped wegen.shp" name="roads">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Checked" id="clipped_wegen20180112104438497" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/clipped wegen.shp" name="roads">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="rating_layer20180112222420676" source="C:\Users\bvant\Documents\GitHub\GEO1005-Bas-Freek\SPARK\Spatial_decision_making_Freek_Bas\sample_data\rating layer.shp" name="rating layer">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="rating_layer20180112222420676" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/rating layer.shp" name="rating layer">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="account_layer20180112222403788" source="C:\Users\bvant\Documents\GitHub\GEO1005-Bas-Freek\SPARK\Spatial_decision_making_Freek_Bas\sample_data\account layer.shp" name="account layer">
+    <layer-tree-layer expanded="1" providerKey="ogr" checked="Qt::Unchecked" id="account_layer20180112222403788" source="C:/Users/bvant/Documents/GitHub/GEO1005-Bas-Freek/SPARK/Spatial_decision_making_Freek_Bas/sample_data/account layer.shp" name="account layer">
       <customproperties/>
     </layer-tree-layer>
   </layer-tree-group>
@@ -28,10 +28,10 @@
   <mapcanvas>
     <units>meters</units>
     <extent>
-      <xmin>87668.38377385983767454</xmin>
-      <ymin>431247.67148702655686066</ymin>
-      <xmax>100879.93196614996122662</xmax>
-      <ymax>443646.24854521144879982</ymax>
+      <xmin>92259.02660793499671854</xmin>
+      <ymin>436373.42468550062039867</ymin>
+      <xmax>93084.74836963848792948</xmax>
+      <ymax>437148.33575155591825023</ymax>
     </extent>
     <rotation>0</rotation>
     <projections>0</projections>
@@ -2042,6 +2042,12 @@ def my_form_open(dialog, layer, feature):
       <previewExpression></previewExpression>
     </maplayer>
     <maplayer simplifyAlgorithm="0" minimumScale="0" maximumScale="1e+08" simplifyDrawingHints="0" minLabelScale="0" maxLabelScale="1e+08" simplifyDrawingTol="1" readOnly="0" geometry="Point" simplifyMaxScale="1" type="vector" hasScaleBasedVisibilityFlag="0" simplifyLocal="1" scaleBasedLabelVisibilityFlag="0">
+      <extent>
+        <xmin>91271.15779768963693641</xmin>
+        <ymin>431996.33377817436121404</ymin>
+        <xmax>98507.95810792909469455</xmax>
+        <ymax>441324.37126230425201356</ymax>
+      </extent>
       <id>parking_clipped20180112213450999</id>
       <datasource>./parking clipped.shp</datasource>
       <keywordList>
@@ -2092,14 +2098,22 @@ def my_form_open(dialog, layer, feature):
         <edittype widgetv2type="TextEdit" name="AVAILABLE">
           <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
         </edittype>
-        <edittype widgetv2type="TextEdit" name="FRACTION">
-          <widgetv2config IsMultiline="0" fieldEditable="1" constraint="" UseHtml="0" labelOnTop="0" constraintDescription="" notNull="0"/>
-        </edittype>
       </edittypes>
-      <renderer-v2 attr="FRACTION" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
+      <renderer-v2 attr="AVAILABLE" forceraster="0" symbollevels="0" type="categorizedSymbol" enableorderby="0">
         <categories>
-          <category render="true" symbol="0" value="0" label="0"/>
-          <category render="true" symbol="1" value="1" label="1"/>
+          <category render="true" symbol="0" value="1" label="1"/>
+          <category render="true" symbol="1" value="2" label="2"/>
+          <category render="true" symbol="2" value="3" label="3"/>
+          <category render="true" symbol="3" value="4" label="4"/>
+          <category render="true" symbol="4" value="5" label="5"/>
+          <category render="true" symbol="5" value="6" label="6"/>
+          <category render="true" symbol="6" value="7" label="7"/>
+          <category render="true" symbol="7" value="8" label="8"/>
+          <category render="true" symbol="8" value="11" label="11"/>
+          <category render="true" symbol="9" value="16" label="16"/>
+          <category render="true" symbol="10" value="19" label="19"/>
+          <category render="true" symbol="11" value="22" label="22"/>
+          <category render="true" symbol="12" value="" label=""/>
         </categories>
         <symbols>
           <symbol alpha="1" clip_to_extent="1" type="marker" name="0">
@@ -2125,7 +2139,227 @@ def my_form_open(dialog, layer, feature):
           <symbol alpha="1" clip_to_extent="1" type="marker" name="1">
             <layer pass="0" class="SvgMarker" locked="0">
               <prop k="angle" v="0"/>
+              <prop k="color" v="228,74,51,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="10">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="54,195,54,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="11">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="40,173,59,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="12">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
               <prop k="color" v="26,150,65,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="2">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="241,124,74,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="3">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="253,174,97,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="4">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="254,201,129,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="5">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,228,160,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="6">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="255,255,192,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="7">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="193,243,144,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="8">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="131,230,97,255"/>
+              <prop k="horizontal_anchor_point" v="1"/>
+              <prop k="name" v="transport/transport_parking_car.svg"/>
+              <prop k="offset" v="0,0"/>
+              <prop k="offset_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="offset_unit" v="MM"/>
+              <prop k="outline_color" v="0,0,0,255"/>
+              <prop k="outline_width" v="0.2"/>
+              <prop k="outline_width_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="outline_width_unit" v="MM"/>
+              <prop k="scale_method" v="diameter"/>
+              <prop k="size" v="8.2"/>
+              <prop k="size_map_unit_scale" v="0,0,0,0,0,0"/>
+              <prop k="size_unit" v="MM"/>
+              <prop k="vertical_anchor_point" v="1"/>
+            </layer>
+          </symbol>
+          <symbol alpha="1" clip_to_extent="1" type="marker" name="9">
+            <layer pass="0" class="SvgMarker" locked="0">
+              <prop k="angle" v="0"/>
+              <prop k="color" v="69,217,49,255"/>
               <prop k="horizontal_anchor_point" v="1"/>
               <prop k="name" v="transport/transport_parking_car.svg"/>
               <prop k="offset" v="0,0"/>
@@ -2383,7 +2617,6 @@ def my_form_open(dialog, layer, feature):
         <alias field="TYPE" index="5" name=""/>
         <alias field="TOTAL" index="6" name=""/>
         <alias field="AVAILABLE" index="7" name=""/>
-        <alias field="FRACTION" index="8" name=""/>
       </aliases>
       <excludeAttributesWMS/>
       <excludeAttributesWFS/>
@@ -2399,7 +2632,6 @@ def my_form_open(dialog, layer, feature):
           <column width="-1" hidden="1" type="actions"/>
           <column width="-1" hidden="0" type="field" name="AVAILABLE"/>
           <column width="-1" hidden="0" type="field" name="TOTAL"/>
-          <column width="-1" hidden="0" type="field" name="FRACTION"/>
         </columns>
       </attributetableconfig>
       <editform>.qgis2/python/plugins/Spatial_decision_making_Freek_Bas/sample_data</editform>
@@ -2439,7 +2671,6 @@ def my_form_open(dialog, layer, feature):
         <default field="TYPE" expression=""/>
         <default field="TOTAL" expression=""/>
         <default field="AVAILABLE" expression=""/>
-        <default field="FRACTION" expression=""/>
       </defaults>
       <previewExpression>COALESCE( "NAME", '&lt;NULL>' )</previewExpression>
     </maplayer>

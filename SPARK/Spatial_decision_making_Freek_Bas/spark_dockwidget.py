@@ -168,6 +168,7 @@ class Spatial_decision_making_Freek_BasDockWidget(QtGui.QDockWidget, FORM_CLASS)
             self.RegisterButton.setEnabled(False)
         else:
             self.LoginButton.setEnabled(False)
+            self.RegisterButton.setEnabled(True)
 
     def enableAccount(self):
         if self.NameInput.isModified() == True:
